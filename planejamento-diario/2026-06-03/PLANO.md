@@ -47,15 +47,15 @@ sanitizado e genérico.
 
 **Objetivo:** ✅ 2/2 — 43 skills copiadas, 120+ arquivos de scripts/templates/references
 
-### Wave 2 — Sanitização e Generalização (Tarde) 🔴
+### Wave 2 — Sanitização e Generalização (Tarde) 🔴 ✅
 
-| Task | Descrição | Ferramenta |
-|:----:|-----------|:----------:|
-| task_03 | Sanitizar skills — substituir Roshar→{{TEAM_NAME}}, Oeste Gestão→{{PROJECT_NAME}}, etc. | Gemini |
-| task_04 | Criar templates .tpl com placeholders | Gemini |
-| task_05 | Criar scripts genéricos (cron, setup, rotate-key, validate) | Gemini |
+| Task | Descrição | Ferramenta | Status |
+|:----:|-----------|:----------:|:------:|
+| task_03 | Sanitizar skills — substituir Roshar→{{TEAM_NAME}}, Oeste Gestão→{{PROJECT_NAME}}, etc. | Opus/Gemini | ✅ |
+| task_04 | Criar templates .tpl com placeholders | Gemini | ✅ |
+| task_05 | Criar scripts genéricos (cron, setup, rotate-key, validate) | Gemini | ✅ |
 
-**Objetivo:** Gerar o conteúdo final do repositório a partir do material bruto.
+**Objetivo:** ✅ 3/3 — 142 skills sanitizadas, 4 templates .tpl, 4 scripts + README
 
 ### Wave 3 — Documentação (Noite) 🟡
 

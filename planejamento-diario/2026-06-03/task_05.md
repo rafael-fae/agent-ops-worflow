@@ -70,13 +70,13 @@ Script de rotação de chaves (baseado no nosso existente):
 
 ## Checklist
 
-- [ ] setup-workflow.sh criado com variáveis configuráveis
-- [ ] gerar-plano-diario.sh criado com suporte a cron
-- [ ] validate-workflow.sh criado com relatório
-- [ ] rotate-key.sh genérico criado
-- [ ] Scripts comentados em português
-- [ ] Todos com `set -euo pipefail` e tratamento de erro
-- [ ] `scripts/README.md` com instruções de uso de cada script
+- [x] setup-workflow.sh criado com variáveis configuráveis
+- [x] gerar-plano-diario.sh criado com suporte a cron
+- [x] validate-workflow.sh criado com relatório
+- [x] rotate-key.sh genérico criado
+- [x] Scripts comentados em português
+- [x] Todos com `set -euo pipefail` e tratamento de erro
+- [x] `scripts/README.md` com instruções de uso de cada script
 
 ---
 
@@ -90,4 +90,14 @@ Script de rotação de chaves (baseado no nosso existente):
 
 ## Conclusão
 
-`TBD`
+**Agente:** Dalinar (via subagentes)
+**Concluída em:** 03/06/2026 ~10:40
+**Motor utilizado:** deepseek-v4-flash (subagente)
+**Observações:**
+- setup-workflow.sh — 12.3KB, interativo + env vars, criação da estrutura
+- gerar-plano-diario.sh — 10.2KB, cron-ready, --tasks=N, --force, logging
+- validate-workflow.sh — 14.7KB, 9 verificações, --fix, exit codes
+- rotate-key.sh — 10.5KB, ed25519, backup, --host, --show
+- scripts/README.md — 8.3KB, documentação completa de todos os scripts
+- Todos passam bash -n (syntax check), set -euo pipefail
+- Zero referências a Roshar/Rafael/Oeste Gestão

@@ -74,12 +74,12 @@ Exemplo:
 
 ## Checklist
 
-- [ ] PLANO.md.tpl criado com todas as seções
-- [ ] TASK.md.tpl criado com todos os campos
-- [ ] INDICE.md.tpl criado com legenda e tabela
-- [ ] README-WORKFLOW.md.tpl criado
-- [ ] Placeholders usam formato __PLACEHOLDER__ consistente
-- [ ] Templates testáveis (alguém consegue preencher e usar)
+- [x] PLANO.md.tpl criado com todas as seções
+- [x] TASK.md.tpl criado com todos os campos
+- [x] INDICE.md.tpl criado com legenda e tabela
+- [x] README-WORKFLOW.md.tpl criado
+- [x] Placeholders usam formato __PLACEHOLDER__ consistente
+- [x] Templates testáveis (alguém consegue preencher e usar)
 
 ---
 
@@ -92,4 +92,14 @@ Exemplo:
 
 ## Conclusão
 
-`TBD`
+**Agente:** Dalinar (via subagentes)
+**Concluída em:** 03/06/2026 ~10:30
+**Motor utilizado:** deepseek-v4-flash (subagente)
+**Observações:**
+- PLANO.md.tpl — 215 linhas, ~70 placeholders, waves editáveis, dependências, regras
+- TASK.md.tpl — 251 linhas, ~50 placeholders, seções completas
+- INDICE.md.tpl — 147 linhas, ~65 placeholders, contador automático
+- README-WORKFLOW.md.tpl — 202 linhas, 11 placeholders, visão geral do workflow
+- Todos com placeholders __DUPLO_UNDERSCORE__ e comentários HTML
+- Zero referências a Roshar/Rafael/Oeste Gestão
+- Baseados nos exemplos reais do planejamento-diario/

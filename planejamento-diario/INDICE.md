@@ -9,15 +9,15 @@
 
 ---
 
-## 03/06/2026 — 2/10
+## 03/06/2026 — 5/10
 
 | Task | Descrição | Wave | ✅ | 👁 | Commit |
 |------|-----------|:----:|---|---|--------|
 | task_01 | Mapear skills existentes + copiar para files/skills/raw/ | 1 | ✅ | ⬜ | 2c28822 |
 | task_02 | Mapear scripts, templates, assets → files/ | 1 | ✅ | ⬜ | 2c28822 |
-| task_03 | Sanitizar skills — remover refs específicas Roshar/Oeste | 2 | ⬜ | ⬜ | — |
-| task_04 | Criar templates genéricos (PLANO, TASK, INDICE .tpl) | 2 | ⬜ | ⬜ | — |
-| task_05 | Criar scripts de automação genéricos | 2 | ⬜ | ⬜ | — |
+| task_03 | Sanitizar skills — remover refs específicas Roshar/Oeste | 2 | ✅ | ⬜ | 34d4696 |
+| task_04 | Criar templates genéricos (PLANO, TASK, INDICE .tpl) | 2 | ✅ | ⬜ | 34d4696 |
+| task_05 | Criar scripts de automação genéricos | 2 | ✅ | ⬜ | 34d4696 |
 | task_06 | Escrever README.md + visão geral do projeto | 3 | ⬜ | ⬜ | — |
 | task_07 | Docs: setup inicial + ciclo diário + protocolo Slack | 3 | ⬜ | ⬜ | — |
 | task_08 | Docs: guia de skills e adaptação para outros times | 3 | ⬜ | ⬜ | — |
