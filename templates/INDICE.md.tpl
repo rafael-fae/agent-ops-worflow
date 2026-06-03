@@ -1,79 +1,79 @@
 <!--
 ==============================================================================
-  INDICE.md.tpl — Generic Planning Index Template
+  INDICE.md.tpl — Template Genérico de Índice de Planejamento
   ============================================================================
-  This is the template for the overall daily planning index.
-  Copy to planejamento-diario/INDICE.md and fill in.
+  Este é o template para o índice geral de planejamento diário.
+  Copie para planejamento-diario/INDICE.md e preencha.
 
-  The index is the SHOWCASE of the team's progress. It shows:
-    - What was planned vs. accomplished
-    - The status of each task (completed, audited, pending)
-    - Progress by wave
-    - Commits associated with each delivery
+  O índice é a VITRINE do progresso da equipe. Ele mostra:
+    - O que foi planejado vs. realizado
+    - O status de cada tarefa (concluída, auditada, pendente)
+    - O progresso por onda
+    - Os commits associados a cada entrega
 
-  How to use:
-    1. Copy this template to planejamento-diario/INDICE.md
-    2. Each new day, add a "## DD/MM/YYYY — X/Y" section
-    3. Fill the table with the day's tasks
-    4. Update the progress by wave section
-    5. Keep the legend at the top
+  Como usar:
+    1. Copie este template para planejamento-diario/INDICE.md
+    2. A cada novo dia, adicione uma seção "## DD/MM/YYYY — X/Y"
+    3. Preencha a tabela com as tarefas do dia
+    4. Atualize a seção de progresso por onda
+    5. Mantenha a legenda no topo
 
-  Daily update:
-    - At the start of the day: add the date section with pending tasks
-    - Upon completing a task: change ⬜ to ✅ and add the commit hash
-    - After audit: change 👁 ⬜ to 👁 ✅
-    - At the end of the day: update the X/Y counter and the progress section
+  Atualização diária:
+    - No início do dia: adicione a seção da data com tarefas pendentes
+    - Ao concluir uma tarefa: altere ⬜ para ✅ e adicione o hash do commit
+    - Após auditoria: altere 👁 ⬜ para 👁 ✅
+    - Ao final do dia: atualize o contador X/Y e a seção de progresso
 ==============================================================================
 -->
 
-# Planning Index — __NOME_DO_PROJETO__
+# Índice de Planejamento — __NOME_DO_PROJETO__
 
 <!--
-  Legend: explains the symbols used in the tables.
-  ✅ = task completed (execution finished)
-  👁 = task audited (cross-review done by another agent)
-  ⬜ = pending (not started or not completed)
+  Legenda: explica os símbolos usados nas tabelas.
+  ✅ = tarefa concluída (execução finalizada)
+  👁 = tarefa auditada (revisão cruzada feita por outro agente)
+  ⬜ = pendente (não iniciada ou não concluída)
 -->
-> **Purpose:** This index documents the planning and progress of project
-> __NOME_DO_PROJETO__ — a multi-agent daily planning system.
+> **Propósito:** Este índice documenta o planejamento e o progresso do projeto
+> __NOME_DO_PROJETO__ — um sistema de planejamento diário multiagente.
 >
-> **Legend:** ✅ = completed | 👁 = audited | ⬜ = pending
+> **Legenda:** ✅ = concluída | 👁 = auditada | ⬜ = pendente
 >
-> **Goal:** This file is the workflow THERMOMETER — it shows execution health.
+> **Meta:** Este arquivo é o TERMÔMETRO do fluxo de trabalho — mostra a saúde da execução.
 
 ---
 
 <!-- =====================================================================
-  DAY SECTION
-  For each work day, add a block like the one below.
+  SEÇÃO DO DIA
+  Para cada dia útil, adicione um bloco como o abaixo.
 
-  Header format:
-    ## DD/MM/YYYY — COMPLETED_TASKS/TOTAL_TASKS
+  Formato do cabeçalho:
+    ## DD/MM/YYYY — TAREFAS_CONCLUIDAS/TOTAL_TAREFAS
 
-  Example:
+  Exemplo:
     ## 03/06/2026 — 2/10
 
-  The table has 6 columns:
-    Task      | File name (link)
-    Description | Summary of what the task does
-    Wave      | Wave number
-    ✅        | Completed? (✅ or ⬜)
-    👁        | Audited? (✅ or ⬜)
-    Commit    | Commit hash (or "—" if not committed)
+  A tabela tem 6 colunas:
+    Tarefa    | Nome do arquivo (link)
+    Descrição | Resumo do que a tarefa faz
+    Onda      | Número da onda
+    ✅        | Concluída? (✅ ou ⬜)
+    👁        | Auditada? (✅ ou ⬜)
+    Commit    | Hash do commit (ou "—" se não commitado)
 
-  IMPORTANT: The counter in the title MUST reflect the actual sum of ✅ in the column.
-  At the end of the day, the counter must match the total of completed tasks.
+  IMPORTANTE: O contador no título DEVE refletir a soma real de ✅ na coluna.
+  Ao final do dia, o contador deve bater com o total de tarefas concluídas.
 ===================================================================== -->
 
 ## __DATA__ — __TASKS_CONCLUIDAS__/__TOTAL_TASKS__
 
-| Task | Description | Wave | ✅ | 👁 | Commit |
-|------|-------------|:----:|---|---|--------|
+| Tarefa | Descrição | Onda | ✅ | 👁 | Commit |
+|--------|-----------|:----:|---|---|--------|
 <!--
-  Example row (fill for each task):
-  | task_01 | Set up development environment | 1 | ✅ | ⬜ | a1b2c3d |
-  | task_02 | Review requirements             | 1 | ✅ | ✅ | e4f5g6h |
-  | task_03 | Fix critical bug                | 2 | ⬜ | ⬜ | — |
+  Exemplo de linha (preencha para cada tarefa):
+  | task_01 | Configurar ambiente de desenvolvimento | 1 | ✅ | ⬜ | a1b2c3d |
+  | task_02 | Revisar requisitos                     | 1 | ✅ | ✅ | e4f5g6h |
+  | task_03 | Corrigir bug crítico                  | 2 | ⬜ | ⬜ | — |
 -->
 | __TASK_1__ | __DESCRICAO_1__ | __WAVE_1__ | __STATUS_1__ | __AUDIT_1__ | __COMMIT_1__ |
 | __TASK_2__ | __DESCRICAO_2__ | __WAVE_2__ | __STATUS_2__ | __AUDIT_2__ | __COMMIT_2__ |
@@ -86,34 +86,34 @@
 | __TASK_9__ | __DESCRICAO_9__ | __WAVE_9__ | __STATUS_9__ | __AUDIT_9__ | __COMMIT_9__ |
 | __TASK_10__ | __DESCRICAO_10__ | __WAVE_10__ | __STATUS_10__ | __AUDIT_10__ | __COMMIT_10__ |
 
-_Add or remove rows as needed based on the number of tasks for the day._
+_Adicione ou remova linhas conforme necessário, de acordo com o número de tarefas do dia._
 
 ---
 
 <!-- =====================================================================
-  SECTION: PROGRESS BY WAVE
-  Visual summary of consolidated progress across all project waves.
-  The table shows:
-    - Wave name
-    - Total tasks in the wave
-    - How many completed
-    - Visual status (progress bar)
+  SEÇÃO: PROGRESSO POR ONDA
+  Resumo visual do progresso consolidado em todas as ondas do projeto.
+  A tabela mostra:
+    - Nome da onda
+    - Total de tarefas na onda
+    - Quantas concluídas
+    - Status visual (barra de progresso)
 
-  Bar format: "X/Y" where X is completed and Y is total.
-  Example: "3/5" or "✅ 3/5" if the wave is complete.
+  Formato da barra: "X/Y" onde X é concluído e Y é total.
+  Exemplo: "3/5" ou "✅ 3/5" se a onda estiver completa.
 
-  OPTIONAL: you can add a Total row at the end.
+  OPCIONAL: você pode adicionar uma linha de Total ao final.
 ===================================================================== -->
 
-## Progress
+## Progresso
 
-| Wave | Tasks | Status |
-|:----:|:-----:|:------:|
+| Onda | Tarefas | Status |
+|:----:|:-------:|:------:|
 <!--
-  Example:
+  Exemplo:
   | 1 — Setup        | 2 | ✅ 2/2 |
-  | 2 — Development  | 3 | ⬜ 1/3 |
-  | 3 — Testing      | 3 | ⬜ 0/3 |
+  | 2 — Desenvolvimento | 3 | ⬜ 1/3 |
+  | 3 — Testes       | 3 | ⬜ 0/3 |
   | 4 — Deploy       | 2 | ⬜ 0/2 |
   | **Total**        | **10** | **3/10** |
 -->
@@ -126,22 +126,22 @@ _Add or remove rows as needed based on the number of tasks for the day._
 ---
 
 <!-- =====================================================================
-  SECTION: UPDATE INSTRUCTIONS
-  Keep these instructions at the end of the file for quick reference.
-  Anyone on the team should be able to update the index.
+  SEÇÃO: INSTRUÇÕES DE ATUALIZAÇÃO
+  Mantenha estas instruções ao final do arquivo para consulta rápida.
+  Qualquer pessoa na equipe deve ser capaz de atualizar o índice.
 ===================================================================== -->
 
-## How to update this index
+## Como atualizar este índice
 
-1. **Add a new day:** copy the "## __DATA__" section block and adjust
-2. **Mark task completed:** change ⬜ to ✅ in the ✅ column and add the commit hash
-3. **Mark task audited:** change ⬜ to ✅ in the 👁 column
-4. **Update header counter:** count how many ✅ exist in the ✅ column and update __TASKS_CONCLUIDAS__/__TOTAL_TASKS__
-5. **Update progress by wave:** update each wave's status in the "Progress" section
-6. **Commit the changes:** `git add -A && git commit -m "index: updates progress for day __DATA__" && git push`
+1. **Adicionar um novo dia:** copie o bloco da seção "## __DATA__" e ajuste
+2. **Marcar tarefa concluída:** altere ⬜ para ✅ na coluna ✅ e adicione o hash do commit
+3. **Marcar tarefa auditada:** altere ⬜ para ✅ na coluna 👁
+4. **Atualizar contador do cabeçalho:** conte quantos ✅ existem na coluna ✅ e atualize __TASKS_CONCLUIDAS__/__TOTAL_TASKS__
+5. **Atualizar progresso por onda:** atualize o status de cada onda na seção "Progresso"
+6. **Commitar as alterações:** `git add -A && git commit -m "índice: atualiza progresso do dia __DATA__" && git push`
 
-### Reminder
+### Lembrete
 
-> The index is ONLY useful if it is kept up to date. Take 2 minutes at the end of each
-> wave to reflect the actual progress. Do not accumulate updates — they
-> tend to never happen.
+> O índice só é ÚTIL se for mantido atualizado. Reserve 2 minutos ao final de cada
+> onda para refletir o progresso real. Não acumule atualizações — elas
+> tendem a nunca acontecer.

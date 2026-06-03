@@ -44,7 +44,7 @@ agent-ops-workflow/
 ├── planejamento-diario/    # Dogfooding — the workflow running on itself
 ├── templates/              # Source of truth: PLANO.md.tpl, TASK.md.tpl, INDICE.md.tpl
 ├── scripts/                # setup-workflow.sh, gerar-plano-diario.sh, validate-workflow.sh, rotate-key.sh
-├── docs/                   # Full documentation (6 guides)
+├── docs/en/               # Full documentation (6 guides in English)
 ├── files/                  # Working area — NOT committed (.gitignored)
 │   └── skills/
 │       ├── raw/            # Original skills before sanitization
@@ -167,12 +167,12 @@ Every task file must contain:
 
 | File | Purpose |
 |------|---------|
-| `docs/setup.md` | Environment setup, prerequisites, first run |
-| `docs/daily-cycle.md` | Step-by-step of the 6-phase cycle |
-| `docs/slack-protocol.md` | Agent communication rules |
-| `docs/04-SKILLS-GUIDE.md` | Full skill reference, creation, adaptation |
-| `docs/05-CUSTOMIZATION.md` | Team setup, templates, engine config |
-| `docs/best-practices.md` | Tips, pitfalls, conventions |
+| `docs/en/01-SETUP-INITIAL.md` | Environment setup, prerequisites, first run |
+| `docs/en/02-DAILY-CYCLE.md` | Step-by-step of the 6-phase cycle |
+| `docs/en/03-SLACK-PROTOCOL.md` | Agent communication rules |
+| `docs/en/04-SKILLS-GUIDE.md` | Full skill reference, creation, adaptation |
+| `docs/en/05-CUSTOMIZATION.md` | Team setup, templates, engine config |
+| `docs/en/06-QUICK-REFERENCE.md` | Tips, pitfalls, conventions |
 
 ---
 
