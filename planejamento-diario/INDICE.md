@@ -22,7 +22,7 @@
 | task_07 | Docs: setup inicial + ciclo diário + protocolo Slack | 3 | ✅ | 👁 | a06aaff |
 | task_08 | Docs: guia de skills e adaptação para outros times | 3 | ✅ | 👁 | a06aaff |
 | task_09 | Estruturar repositório final (estrutura limpa, sem files/) | 4 | ✅ | 👁 | aa602fc |
-| task_10 | Documentação + automação dos fluxos diários | 4 | ✅ | 👁 | 5c7694f |
+| task_10 | Documentação + automação dos fluxos diários + release v1.0.0 | 4 | ✅ | 👁 | 5c7694f |
 | task_11 | Docs: tokens GitHub para agentes (pt-BR + en-US) | 4 | ✅ | 👁 | 5c7694f |
 | task_12 | Atualizar READMEs com links + registros finais | 4 | ✅ | 👁 | 5c7694f |
 
