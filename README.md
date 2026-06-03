@@ -209,6 +209,7 @@ Este workflow foi projetado para:
 | [Guia de Skills](docs/04-GUIA-SKILLS.md) | Como adaptar, sanitizar e compartilhar skills entre equipes |
 | [Personalização](docs/05-PERSONALIZACAO.md) | Escolha de nomes, papéis, motores e exemplos práticos |
 | [Referência Rápida](docs/06-REFERENCIA-RAPIDA.md) | Cheat sheet de 1 página com comandos, estrutura e regras |
+| [Automação Diária](docs/07-AUTOMACAO-DIARIA.md) | Todos os fluxos automatizados: cron, Hermes, shell scripts e monitoramento |
 
 ---
 

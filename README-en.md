@@ -209,6 +209,7 @@ This workflow is designed for:
 | [Skills Guide](docs/en/04-SKILLS-GUIDE.md) | How to adapt, sanitize, and share skills across teams |
 | [Customization](docs/en/05-CUSTOMIZATION.md) | Choosing names, roles, engines, and practical examples |
 | [Quick Reference](docs/en/06-QUICK-REFERENCE.md) | 1-page cheat sheet with commands, structure, and rules |
+| [Daily Automation](docs/en/07-DAILY-AUTOMATION.md) | All automated flows: cron, Hermes, shell scripts, and monitoring |
 
 ---
 
