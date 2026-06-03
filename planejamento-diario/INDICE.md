@@ -9,7 +9,7 @@
 
 ---
 
-## 03/06/2026 — 8/10
+## 03/06/2026 — 9/10
 
 | Task | Descrição | Wave | ✅ | 👁 | Commit |
 |------|-----------|:----:|---|---|--------|
@@ -21,7 +21,7 @@
 | task_06 | Escrever README.md + visão geral do projeto | 3 | ✅ | 👁 | 8610903 |
 | task_07 | Docs: setup inicial + ciclo diário + protocolo Slack | 3 | ✅ | 👁 | a06aaff |
 | task_08 | Docs: guia de skills e adaptação para outros times | 3 | ✅ | 👁 | a06aaff |
-| task_09 | Estruturar repositório final (estrutura limpa, sem files/) | 4 | ⬜ | ⬜ | — |
+| task_09 | Estruturar repositório final (estrutura limpa, sem files/) | 4 | ✅ | 👁 | aa602fc |
 | task_10 | Publicar no GitHub + auditoria final consolidada | 4 | ⬜ | ⬜ | — |
 
 ---

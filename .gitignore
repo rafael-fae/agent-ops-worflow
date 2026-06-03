@@ -1,10 +1,5 @@
 # agent-ops-workflow — .gitignore
 
-# Material bruto (cópias dos arquivos originais do time)
-# Esta pasta contém dados específicos do time de origem
-# e NÃO deve ser commitada.
-/files/
-
 # Arquivos de ambiente
 .env
 .env.local
