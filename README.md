@@ -101,43 +101,64 @@ Pronto. Sua equipe agora tem um sistema de planejamento diário. Personalize os 
 
 ## 📁 Estrutura do Repositório
 
-```
+```text
 agent-ops-workflow/
 │
-├── planejamento-diario/        # 📅 Planos diários — o workflow funcionando nele mesmo
-│   ├── INDICE.md               # Índice mestre com acompanhamento de progresso
-│   ├── TEMPLATES/              # Cópias prontas para uso dos templates
-│   └── YYYY-MM-DD/             # Pastas de cada dia
-│       ├── PLANO.md            # Plano de execução diária (waves, tasks, deps)
-│       ├── task_01.md          # Tarefa individual com instruções
-│       └── task_02.md ...
+├── planejamento-diario/        # 📅 Nosso workflow funcionando nele mesmo
+│   ├── INDICE.md               # Índice mestre com progresso
+│   ├── 2026-06-03/             # Nosso plano de criação do repositório
+│   │   ├── PLANO.md
+│   │   ├── task_01.md
+│   │   └── ...
+│   └── TEMPLATE_PLANO.md
 │
-├── templates/                  # 📄 Fonte oficial de todos os templates
-│   ├── PLANO.md.tpl            # Template de plano diário (placeholders genéricos)
-│   ├── TASK.md.tpl             # Template de tarefa individual
-│   ├── INDICE.md.tpl           # Template de índice de progresso
-│   └── README-WORKFLOW.md.tpl  # README da pasta planejamento-diario/
+├── docs/                       # 📖 Documentação principal (🇧🇷 pt-BR)
+│   ├── 01-CONFIGURACAO-INICIAL.md
+│   ├── 02-CICLO-DIARIO.md
+│   ├── 03-PROTOCOLO-SLACK.md
+│   ├── 04-GUIA-SKILLS.md
+│   ├── 05-PERSONALIZACAO.md
+│   └── 06-REFERENCIA-RAPIDA.md
 │
-├── scripts/                    # ⚙️ Kit de ferramentas de automação
-│   ├── setup-workflow.sh       # Inicialização rápida do projeto
-│   ├── gerar-plano-diario.sh   # Gerador automático de planos (cron-ready)
-│   ├── validate-workflow.sh    # Auditoria de integridade e consistência
-│   └── rotate-key.sh           # Rotação de chaves SSH (genérico)
+├── docs/en/                    # 🌐 Documentação em inglês (🇺🇸 en-US)
+│   ├── 01-SETUP-INITIAL.md
+│   ├── 02-DAILY-CYCLE.md
+│   ├── 03-SLACK-PROTOCOL.md
+│   ├── 04-SKILLS-GUIDE.md
+│   ├── 05-CUSTOMIZATION.md
+│   └── 06-QUICK-REFERENCE.md
 │
-├── docs/                       # 📖 Documentação completa
-│   ├── setup.md                # Configuração de ambiente e ferramentas
-│   ├── daily-cycle.md          # Passo a passo do ciclo diário
-│   ├── slack-protocol.md       # Comunicação entre agentes via Slack
-│   ├── skills-guide.md         # Guia de adaptação de skills
-│   └── best-practices.md       # Dicas, pitfalls e convenções
+├── templates/                  # 📄 Templates oficiais (🇧🇷 pt-BR)
+│   ├── PLANO.md.tpl
+│   ├── TASK.md.tpl
+│   ├── INDICE.md.tpl
+│   └── README-WORKFLOW.md.tpl
 │
-├── LICENSE                     # Licença MIT
-├── .gitignore                  # Ignora files/ (dados brutos do time)
-├── README.md                   # ← Você está aqui
-└── README-en.md                # 🌐 Versão em inglês
+├── templates/en/               # 🌐 Templates em inglês (🇺🇸 en-US)
+│   ├── PLANO.md.tpl
+│   ├── TASK.md.tpl
+│   ├── INDICE.md.tpl
+│   └── README-WORKFLOW.md.tpl
+│
+├── skills/                     # 🧠 Skills Hermes (sanitizadas, 43 skills)
+│   ├── operacao/               # Skills operacionais (29)
+│   ├── devops/                 # Skills de DevOps (5)
+│   ├── security/               # Skills de segurança (2)
+│   └── ...                     # + skills avulsas (7)
+│
+├── scripts/                    # ⚙️ Automação
+│   ├── setup-workflow.sh
+│   ├── gerar-plano-diario.sh
+│   ├── validate-workflow.sh
+│   └── rotate-key.sh
+│
+├── README.md                   # ← Você está aqui (🇧🇷 pt-BR)
+├── README-en.md                # 🌐 Versão em inglês
+├── LICENSE                     # 📄 MIT
+└── .gitignore
 ```
 
-> **Nota:** A pasta `docs/` é criada durante o setup inicial. Cada documento leva menos de 5 minutos para ser lido.
+> **Nota:** Este repositório já inclui toda a documentação e templates prontos para uso. Após o setup inicial, sua pasta `planejamento-diario/` será gerada automaticamente.
 
 ---
 

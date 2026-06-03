@@ -101,43 +101,64 @@ That's it. Your team now has a daily planning system. Customize the templates, a
 
 ## 📁 Repository Structure
 
-```
+```text
 agent-ops-workflow/
 │
 ├── planejamento-diario/        # 📅 Daily plans — the workflow running itself
 │   ├── INDICE.md               # Master index with progress tracking
-│   ├── TEMPLATES/              # Ready-to-use template copies
-│   └── YYYY-MM-DD/             # Per-day plan folders
-│       ├── PLANO.md            # Daily execution plan (waves, tasks, deps)
-│       ├── task_01.md          # Individual task with instructions
-│       └── task_02.md ...
+│   ├── 2026-06-03/             # Our own plan for creating this repo
+│   │   ├── PLANO.md
+│   │   ├── task_01.md
+│   │   └── ...
+│   └── TEMPLATE_PLANO.md
 │
-├── templates/                  # 📄 Source of truth for all templates
-│   ├── PLANO.md.tpl            # Daily plan template (generic placeholders)
-│   ├── TASK.md.tpl             # Individual task template
-│   ├── INDICE.md.tpl           # Progress index template
-│   └── README-WORKFLOW.md.tpl  # README for the planejamento-diario/ folder
+├── docs/                       # 📖 Main documentation (🇧🇷 pt-BR)
+│   ├── 01-CONFIGURACAO-INICIAL.md
+│   ├── 02-CICLO-DIARIO.md
+│   ├── 03-PROTOCOLO-SLACK.md
+│   ├── 04-GUIA-SKILLS.md
+│   ├── 05-PERSONALIZACAO.md
+│   └── 06-REFERENCIA-RAPIDA.md
 │
-├── scripts/                    # ⚙️ Automation toolbelt
-│   ├── setup-workflow.sh       # One-shot project initialization
-│   ├── gerar-plano-diario.sh   # Cron-ready daily plan generator
-│   ├── validate-workflow.sh    # Integrity & consistency auditor
-│   └── rotate-key.sh           # SSH key rotation (generic)
+├── docs/en/                    # 🌐 English documentation (🇺🇸 en-US)
+│   ├── 01-SETUP-INITIAL.md
+│   ├── 02-DAILY-CYCLE.md
+│   ├── 03-SLACK-PROTOCOL.md
+│   ├── 04-SKILLS-GUIDE.md
+│   ├── 05-CUSTOMIZATION.md
+│   └── 06-QUICK-REFERENCE.md
 │
-├── docs/                       # 📖 Full documentation
-│   ├── setup.md                # Environment & tooling setup
-│   ├── daily-cycle.md          # Step-by-step daily workflow
-│   ├── slack-protocol.md       # Agent communication via Slack
-│   ├── skills-guide.md         # Skills + adaptation guide
-│   └── best-practices.md       # Tips, pitfalls, conventions
+├── templates/                  # 📄 Official templates (🇧🇷 pt-BR)
+│   ├── PLANO.md.tpl
+│   ├── TASK.md.tpl
+│   ├── INDICE.md.tpl
+│   └── README-WORKFLOW.md.tpl
 │
-├── LICENSE                     # MIT License
-├── .gitignore                  # Ignores files/ (raw team data)
-├── README.md                   # 📖 Read this in Portuguese
-└── README-en.md                # ← You are here
+├── templates/en/               # 🌐 English templates (🇺🇸 en-US)
+│   ├── PLANO.md.tpl
+│   ├── TASK.md.tpl
+│   ├── INDICE.md.tpl
+│   └── README-WORKFLOW.md.tpl
+│
+├── skills/                     # 🧠 Hermes skills (sanitized, 43 skills)
+│   ├── operacao/               # Operational skills (29)
+│   ├── devops/                 # DevOps skills (5)
+│   ├── security/               # Security skills (2)
+│   └── ...                     # + standalone skills (7)
+│
+├── scripts/                    # ⚙️ Automation
+│   ├── setup-workflow.sh
+│   ├── gerar-plano-diario.sh
+│   ├── validate-workflow.sh
+│   └── rotate-key.sh
+│
+├── README.md                   # 📖 Read this in Portuguese (🇧🇷 pt-BR)
+├── README-en.md                # ← You are here (🇺🇸 en-US)
+├── LICENSE                     # 📄 MIT
+└── .gitignore
 ```
 
-> **Note:** The `docs/` folder is created during initial setup. All documentation is designed to be read in under 5 minutes per section.
+> **Note:** This repository already includes all documentation and ready-to-use templates. After initial setup, your `planejamento-diario/` folder will be generated automatically.
 
 ---
 
