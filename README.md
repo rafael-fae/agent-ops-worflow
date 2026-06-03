@@ -210,6 +210,7 @@ Este workflow foi projetado para:
 | [Personalização](docs/05-PERSONALIZACAO.md) | Escolha de nomes, papéis, motores e exemplos práticos |
 | [Referência Rápida](docs/06-REFERENCIA-RAPIDA.md) | Cheat sheet de 1 página com comandos, estrutura e regras |
 | [Automação Diária](docs/07-AUTOMACAO-DIARIA.md) | Todos os fluxos automatizados: cron, Hermes, shell scripts e monitoramento |
+| [Tokens GitHub para Agentes](docs/08-TOKENS-AGENTES.md) | Configuração de tokens individuais para cada agente Hermes commitar |
 
 ---
 

@@ -210,6 +210,7 @@ This workflow is designed for:
 | [Customization](docs/en/05-CUSTOMIZATION.md) | Choosing names, roles, engines, and practical examples |
 | [Quick Reference](docs/en/06-QUICK-REFERENCE.md) | 1-page cheat sheet with commands, structure, and rules |
 | [Daily Automation](docs/en/07-DAILY-AUTOMATION.md) | All automated flows: cron, Hermes, shell scripts, and monitoring |
+| [GitHub Tokens for Agents](docs/en/08-AGENT-TOKENS.md) | Individual token setup for each Hermes agent to commit |
 
 ---
 
