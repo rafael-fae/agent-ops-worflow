@@ -57,15 +57,15 @@ sanitizado e genérico.
 
 **Objetivo:** ✅ 3/3 — 142 skills sanitizadas, 4 templates .tpl, 4 scripts + README
 
-### Wave 3 — Documentação (Noite) 🟡
+### Wave 3 — Documentação (Noite) 🟡 ✅
 
-| Task | Descrição | Ferramenta |
-|:----:|-----------|:----------:|
-| task_06 | README.md + visão geral (o que é, para quem serve, quickstart) | Gemini |
-| task_07 | Docs: setup inicial, ciclo diário, protocolo Slack | Gemini |
-| task_08 | Docs: guia de skills, adaptação, melhores práticas | Gemini |
+| Task | Descrição | Ferramenta | Status |
+|:----:|-----------|:----------:|:------:|
+| task_06 | README.md + visão geral (Shallan no Opus — aguardando) | Opus 4.7 | 🔄 |
+| task_07 | Docs: setup inicial, ciclo diário, protocolo Slack | Gemini | ✅ |
+| task_08 | Docs: guia de skills, adaptação, melhores práticas | Gemini | ✅ |
 
-**Objetivo:** Documentação completa, didática, em português.
+**Objetivo:** ✅ 2/3 concluídas — 6 docs em inglês (4.159 linhas), templates traduzidos. Aguardando Shallan finalizar README.
 
 ### Wave 4 — Finalização (Madrugada) 🟢
 
