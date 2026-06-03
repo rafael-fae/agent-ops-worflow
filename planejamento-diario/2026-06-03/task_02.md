@@ -72,11 +72,11 @@ Criar `files/MANIFEST-GERAL.md` com:
 
 ## Checklist
 
-- [ ] Scripts copiados para files/scripts/raw/
-- [ ] Templates copiados para files/templates/raw/
-- [ ] Assets copiados para files/assets/raw/
-- [ ] MANIFEST-GERAL.md criado com inventário
-- [ ] NENHUM arquivo original modificado
+- [x] Scripts copiados para files/scripts/raw/
+- [x] Templates copiados para files/templates/raw/
+- [x] Assets copiados para files/assets/raw/
+- [x] MANIFEST-GERAL.md criado com inventário
+- [x] NENHUM arquivo original modificado
 
 ---
 
@@ -89,4 +89,13 @@ Criar `files/MANIFEST-GERAL.md` com:
 
 ## Conclusão
 
-`TBD`
+**Agente:** Dalinar (via subagentes)
+**Concluída em:** 03/06/2026 ~10:00
+**Motor utilizado:** Gemini CLI + deepseek-v4-flash (subagentes)
+**Observações:** 
+- Scripts: 4 encontrados (3 .sh, 1 .py) — rotate-key, hermes-agent, e outros
+- Templates: 8 encontrados (PLANO.md, TEMPLATE_TASK.md, etc.)
+- References: 108 arquivos (107 .md + 1 .json) de diversas skills
+- Assets: 0 — nenhuma skill possui pasta assets/
+- MANIFEST-GERAL.md criado em files/MANIFEST-GERAL.md com inventário completo
+- 2 conflitos de nome resolvidos: docker-pitfalls.md e ovh-security-hardening.md (prefixados com skill de origem)

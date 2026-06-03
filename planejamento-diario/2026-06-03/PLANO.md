@@ -38,14 +38,14 @@ sanitizado e genérico.
 
 ## Waves
 
-### Wave 1 — Mapeamento e Cópia (Manhã) 🔴
+### Wave 1 — Mapeamento e Cópia (Manhã) 🔴 ✅
 
-| Task | Descrição | Ferramenta |
-|:----:|-----------|:----------:|
-| task_01 | Mapear skills existentes + copiar raw para files/skills/raw/ | Gemini |
-| task_02 | Mapear scripts, templates, assets → files/ respectivos | Gemini |
+| Task | Descrição | Ferramenta | Status |
+|:----:|-----------|:----------:|:------:|
+| task_01 | Mapear skills existentes + copiar raw para files/skills/raw/ | Gemini | ✅ |
+| task_02 | Mapear scripts, templates, assets → files/ respectivos | Gemini | ✅ |
 
-**Objetivo:** Ter todo o material fonte em files/ para trabalhar sem tocar nos originais.
+**Objetivo:** ✅ 2/2 — 43 skills copiadas, 120+ arquivos de scripts/templates/references
 
 ### Wave 2 — Sanitização e Generalização (Tarde) 🔴
 
