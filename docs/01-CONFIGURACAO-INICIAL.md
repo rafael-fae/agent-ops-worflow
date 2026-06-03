@@ -696,6 +696,59 @@ ciclo diário.
 
 ---
 
+## 🔓 Configuração de Approvals (Segurança)
+
+Por padrão, o Hermes Agent pede autorização para QUALQUER comando executado via terminal. Para não travar o fluxo dos agentes com comandos de leitura/verificação, configure `auto_approve_patterns` no `config.yaml` de cada agente:
+
+```yaml
+# ~/.hermes/profiles/meu-agente/config.yaml
+approvals:
+  mode: auto
+  timeout: 60
+  auto_approve_patterns:
+    # Leitura e verificação segura
+    - "python* -c \"import ast*"
+    - "python* -c \"import py_compile*"
+    - "python* -c \"import os*"
+    - "python* -c \"print*"
+    - "git log*"
+    - "git show*"
+    - "git status*"
+    - "git diff*"
+    - "git branch*"
+    - "cat *"
+    - "head *"
+    - "tail *"
+    - "wc *"
+    - "find *"
+    - "grep *"
+    - "ls *"
+    - "mkdir *"
+    - "pwd*"
+    - "echo*"
+    - "which*"
+    - "file *"
+    - "stat *"
+    # Compilação
+    - "python* -m py_compile*"
+    # Git add/commit/push (já autorizados pela task)
+    - "git add*"
+    - "git commit*"
+    - "git push*"
+    # Django check (sem destruição)
+    - "python manage.py check*"
+    - "python manage.py showmigrations*"
+    - "python manage.py sqlmigrate*"
+```
+
+Comandos **DESTRUTIVOS** continuam exigindo autorização explícita e NUNCA devem ser adicionados a esta lista:
+- `rm -rf`, `rm *`, `DROP DATABASE`, `DELETE`, `TRUNCATE`
+- `docker compose down -v`, `docker system prune`
+- `format`, `mkfs`, `dd`, `chmod -R 777`, `chown -R`
+- Qualquer comando via SSH que modifique dados
+
+Para aplicar esta configuração em todos os agentes da sua equipe, edite o `config.yaml` de cada perfil em `~/.hermes/profiles/<AGENTE>/config.yaml`.
+
 > Configuração completa. Sua equipe agora tem um sistema de planejamento diário
 > multi-agente testado em produção rodando no Hermes. O próximo passo é
 > aprender o ciclo diário — vá para `02-CICLO-DIARIO.md`.
