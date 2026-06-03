@@ -203,11 +203,12 @@ This workflow is designed for:
 
 | Guide | Description |
 |-------|-------------|
-| [Setup Guide](docs/setup.md) | Install dependencies, configure Hermes, and initialize your first project |
-| [Daily Cycle](docs/daily-cycle.md) | Step-by-step walkthrough of the 6-phase cycle |
-| [Slack Protocol](docs/slack-protocol.md) | Agent communication patterns, mention system, and zero-cross-talk |
-| [Skills Guide](docs/skills-guide.md) | How to adapt, sanitize, and share skills across teams |
-| [Best Practices](docs/best-practices.md) | Common pitfalls, conventions, and optimization tips |
+| [Setup Guide](docs/en/01-SETUP-INITIAL.md) | Install dependencies, configure Hermes, and initialize your first project |
+| [Daily Cycle](docs/en/02-DAILY-CYCLE.md) | Step-by-step walkthrough of the 6-phase cycle |
+| [Slack Protocol](docs/en/03-SLACK-PROTOCOL.md) | Agent communication patterns, mention system, and zero-cross-talk |
+| [Skills Guide](docs/en/04-SKILLS-GUIDE.md) | How to adapt, sanitize, and share skills across teams |
+| [Customization](docs/en/05-CUSTOMIZATION.md) | Choosing names, roles, engines, and practical examples |
+| [Quick Reference](docs/en/06-QUICK-REFERENCE.md) | 1-page cheat sheet with commands, structure, and rules |
 
 ---
 
