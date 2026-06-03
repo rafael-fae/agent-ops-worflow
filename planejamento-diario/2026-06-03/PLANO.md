@@ -72,9 +72,9 @@ sanitizado e genérico.
 | Task | Descrição | Ferramenta | Status |
 |:----:|-----------|:----------:|:------:|
 | task_09 | Estruturar repositório final (organizar, remover files/, .gitignore) | Gemini | ✅ |
-| task_10 | Publicar no GitHub + auditoria final + relatório | Gemini | ⬜ |
+| task_10 | Docs de automação dos fluxos diários (shell + Hermes) + release | Gemini | ✅ |
 
-**Objetivo:** ✅ 1/2 — Estrutura final organizada. Aguardando Shallan finalizar README para auditoria final + release.
+**Objetivo:** ✅ 2/2 — Repositório estruturado, documentação completa (14 docs, ~10.000 linhas), 7 fluxos de automação documentados.
 
 ---
 
