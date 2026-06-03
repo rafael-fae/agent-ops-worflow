@@ -222,7 +222,7 @@ Este projeto é open source sob a **Licença MIT**. Consulte [LICENSE](LICENSE) 
 
 ## 🙏 Agradecimentos
 
-Este projeto não seria possível sem os ensinamentos e a comunidade da [**Pycodebr**](https://github.com/pycodebr) e do **IA Master Elite**. O conhecimento compartilhado sobre arquitetura de agentes, automação de fluxos e boas práticas com Hermes Agent foi fundamental para construir este workflow. Muito obrigado!
+Este projeto não seria possível sem os ensinamentos e a comunidade da [**Pycodebr**](https://pycodebr.com.br/) ([GitHub](https://github.com/pycodebr)) e do **IA Master Elite**. O conhecimento compartilhado sobre arquitetura de agentes, automação de fluxos e boas práticas com Hermes Agent foi fundamental para construir este workflow. Muito obrigado!
 
 ---
 
