@@ -218,6 +218,14 @@ Este workflow foi projetado para:
 
 Este projeto é open source sob a **Licença MIT**. Consulte [LICENSE](LICENSE) para detalhes.
 
+---
+
+## 🙏 Agradecimentos
+
+Este projeto não seria possível sem os ensinamentos e a comunidade da [**Pycodebr**](https://github.com/pycodebr) e do **IA Master Elite**. O conhecimento compartilhado sobre arquitetura de agentes, automação de fluxos e boas práticas com Hermes Agent foi fundamental para construir este workflow. Muito obrigado!
+
+---
+
 <p align="center">
   <sub>Feito para equipes Hermes. Fork, adapte, faça seu.</sub>
   <br>
