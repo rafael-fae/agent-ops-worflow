@@ -13,8 +13,8 @@
 
 | Task | Descrição | Wave | ✅ | 👁 | Commit |
 |------|-----------|:----:|---|---|--------|
-| task_01 | Mapear skills existentes + copiar para files/skills/raw/ | 1 | ⬜ | ⬜ | — |
-| task_02 | Mapear scripts, templates, assets → files/ | 1 | ⬜ | ⬜ | — |
+| task_01 | Mapear skills existentes + copiar para files/skills/raw/ | 1 | ✅ | ⬜ | 2c28822 |
+| task_02 | Mapear scripts, templates, assets → files/ | 1 | ✅ | ⬜ | 2c28822 |
 | task_03 | Sanitizar skills — remover refs específicas Roshar/Oeste | 2 | ⬜ | ⬜ | — |
 | task_04 | Criar templates genéricos (PLANO, TASK, INDICE .tpl) | 2 | ⬜ | ⬜ | — |
 | task_05 | Criar scripts de automação genéricos | 2 | ⬜ | ⬜ | — |
