@@ -97,7 +97,10 @@ agent-ops-workflow/
 5. **Sempre commit + push antes de reportar** — Se não há hash de commit,
    a tarefa não está concluída.
 
-6. **NUNCA tome ação corretiva sem o sinal verde do Comandante.**
+5. **⬜ mantido é falha grave — atualize IMEDIATAMENTE após cada auditoria.**
+   INDICE.md e PLANO.md DEVEM ser atualizados no mesmo momento da auditoria:
+   ✅ na task, 👁 na task, hash do commit, contador X/Y. Nunca acumule.
+6. **Nunca tome ação corretiva sem o sinal verde do Comandante.**
    Cometeu um erro? Reporte e ESPERE. Não delete, reverta ou corrija.
 
 ---

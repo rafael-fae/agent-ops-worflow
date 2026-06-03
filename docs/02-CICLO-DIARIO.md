@@ -890,8 +890,13 @@ e commit na sua pasta diária para arquivamento.
 4. **Sempre commit antes de reportar.** Uma tarefa sem hash de commit não está
    concluída. Verifique com `git log`.
 
-5. **Atualize IMEDIATAMENTE após cada auditoria.** INDICE.md e PLANO.md devem
-   refletir a realidade em todos os momentos. Não acumule atualizações.
+5. **⬜ mantido é falha grave — atualize IMEDIATAMENTE após cada auditoria.**
+   INDICE.md e PLANO.md DEVEM ser atualizados no mesmo momento da auditoria:
+   - ✅ na task (concluída)
+   - 👁 na task (auditada)
+   - Hash do commit na coluna Commit
+   - Contador X/Y recalculado
+   - **Nunca acumule atualizações. Nunca deixe ⬜ depois de auditado.**
 
 6. **Nunca tome ação corretiva sem o sinal verde do Comandante.**
    Cometeu um erro? Reporte e espere.

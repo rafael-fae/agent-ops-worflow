@@ -182,7 +182,10 @@ __DIAGRAMA_DE_DEPENDENCIAS__
 6. **Idioma:** Documentação em __IDIOMA__ (ex.: pt-BR, en-US)
 7. **Commit semântico:** Commits descritivos no idioma escolhido
 8. **Threads:** Máximo de __MAX_THREADS__ agentes simultâneos
-9. **Auditoria:** Toda tarefa concluída DEVE ser auditada por outro agente antes de fechar
+9. **Auditoria:** Toda tarefa concluída DEVE ser auditada antes de fechar
+10. **⬜ mantido é falha grave — atualize IMEDIATAMENTE após cada auditoria.**
+    INDICE.md e PLANO.md DEVEM ser atualizados na hora: ✅ + 👁 + hash + contador.
+    Nunca acumule atualizações.
 
 ---
 
