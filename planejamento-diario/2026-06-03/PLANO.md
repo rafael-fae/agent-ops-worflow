@@ -61,11 +61,11 @@ sanitizado e genérico.
 
 | Task | Descrição | Ferramenta | Status |
 |:----:|-----------|:----------:|:------:|
-| task_06 | README.md + visão geral (Shallan no Opus — aguardando) | Opus 4.7 | 🔄 |
+| task_06 | README.md principal (pt-BR) + README-en.md (en-US) | Opus 4.7 | ✅ |
 | task_07 | Docs: setup inicial, ciclo diário, protocolo Slack | Gemini | ✅ |
 | task_08 | Docs: guia de skills, adaptação, melhores práticas | Gemini | ✅ |
 
-**Objetivo:** ✅ 2/3 concluídas — 6 docs em inglês (4.159 linhas), templates traduzidos. Aguardando Shallan finalizar README.
+**Objetivo:** ✅ 3/3 — README moderno (Shallan/Opus) + 6 docs pt-BR + 6 docs en-US + templates bilíngues. Total: ~10.000 linhas de documentação.
 
 ### Wave 4 — Finalização (Madrugada) 🟢
 

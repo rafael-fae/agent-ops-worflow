@@ -9,7 +9,7 @@
 
 ---
 
-## 03/06/2026 — 7/10
+## 03/06/2026 — 8/10
 
 | Task | Descrição | Wave | ✅ | 👁 | Commit |
 |------|-----------|:----:|---|---|--------|
@@ -18,7 +18,7 @@
 | task_03 | Sanitizar skills — remover refs específicas Roshar/Oeste | 2 | ✅ | ⬜ | 34d4696 |
 | task_04 | Criar templates genéricos (PLANO, TASK, INDICE .tpl) | 2 | ✅ | ⬜ | 34d4696 |
 | task_05 | Criar scripts de automação genéricos | 2 | ✅ | ⬜ | 34d4696 |
-| task_06 | Escrever README.md + visão geral do projeto | 3 | 🔄 | ⬜ | — |
+| task_06 | Escrever README.md + visão geral do projeto | 3 | ✅ | ⬜ | 8610903 |
 | task_07 | Docs: setup inicial + ciclo diário + protocolo Slack | 3 | ✅ | ⬜ | a06aaff |
 | task_08 | Docs: guia de skills e adaptação para outros times | 3 | ✅ | ⬜ | a06aaff |
 | task_09 | Estruturar repositório final (estrutura limpa, sem files/) | 4 | ⬜ | ⬜ | — |
