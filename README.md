@@ -3,194 +3,199 @@
     <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/status-active-2ea043?style=for-the-badge">
     <img alt="Agent Ops Workflow" src="https://img.shields.io/badge/status-active-2ea043?style=for-the-badge">
   </picture>
-  <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-blue?style=for-the-badge">
-  <img alt="Version: v1.0.0" src="https://img.shields.io/badge/version-v1.0.0-8250df?style=for-the-badge">
-  <img alt="Hermes Agent" src="https://img.shields.io/badge/built%20for-Hermes%20Agent-ff6b35?style=for-the-badge">
+  <img alt="Licença: MIT" src="https://img.shields.io/badge/licença-MIT-blue?style=for-the-badge">
+  <img alt="Versão: v1.0.0" src="https://img.shields.io/badge/versão-v1.0.0-8250df?style=for-the-badge">
+  <img alt="Hermes Agent" src="https://img.shields.io/badge/feito%20para-Hermes%20Agent-ff6b35?style=for-the-badge">
 </p>
 
 <h1 align="center">🤖 Agent Ops Workflow</h1>
-<h3 align="center">Multi-Agent Daily Planning for Hermes</h3>
+<h3 align="center">Planejamento Diário Multi-Agente para Hermes</h3>
 
 <p align="center">
-  A production-tested daily planning workflow for teams of AI agents running on <strong>Hermes</strong>.<br>
-  Plan. Approve. Delegate. Execute. Audit. Report. — on repeat, every day.
+  <strong><a href="README-en.md">📖 Read in English</a></strong>
 </p>
 
 <p align="center">
-  <a href="#-quickstart">Quickstart</a> • 
-  <a href="#-the-problem">The Problem</a> • 
-  <a href="#-the-solution">The Solution</a> • 
-  <a href="#-features">Features</a> • 
-  <a href="#-repository-structure">Structure</a> • 
-  <a href="#-for-whom">For Whom</a>
+  Um workflow de planejamento diário testado em produção para equipes de agentes de IA rodando no <strong>Hermes</strong>.<br>
+  Planeje. Aprove. Delegue. Execute. Audite. Reporte. — todos os dias, em ciclo.
+</p>
+
+<p align="center">
+  <a href="#-quickstart">Quickstart</a> •
+  <a href="#-o-problema">O Problema</a> •
+  <a href="#-a-solução">A Solução</a> •
+  <a href="#-funcionalidades">Funcionalidades</a> •
+  <a href="#-estrutura-do-repositório">Estrutura</a> •
+  <a href="#-para-quem">Para Quem</a>
 </p>
 
 ---
 
-## 🧠 The Problem
+## 🧠 O Problema
 
-AI agents have **no persistent memory between sessions**. Every time a conversation starts, it's a clean slate — no context, no awareness of what happened yesterday, no understanding of the bigger picture. Without an external orchestration system, teams of agents suffer from:
+Agentes de IA **não têm memória persistente entre sessões**. Toda vez que uma conversa começa, é uma tábula rasa — sem contexto, sem noção do que aconteceu ontem, sem compreensão do panorama geral. Sem um sistema externo de orquestração, equipes de agentes sofrem com:
 
-- **Lost context** — yesterday's decisions vanish overnight
-- **Duplicate work** — multiple agents unknowingly solving the same problem
-- **Inconsistent engines** — the wrong model gets used for the wrong task
-- **No audit trail** — who did what, when, and why? Nobody knows
-- **Scattered progress** — no single source of truth for what's been done
+- **Contexto perdido** — decisões de ontem desaparecem da noite para o dia
+- **Trabalho duplicado** — múltiplos agentes resolvendo o mesmo problema sem saber
+- **Motores inconsistentes** — o modelo errado é usado para a tarefa errada
+- **Sem trilha de auditoria** — quem fez o quê, quando e por quê? Ninguém sabe
+- **Progresso disperso** — não existe uma fonte única da verdade
 
-When running a multi-agent operation, these problems compound exponentially. You need a system — not just good prompts.
+Em operações multi-agente, esses problemas se multiplicam exponencialmente. Você precisa de um **sistema**, não apenas de bons prompts.
 
 ---
 
-## 🔁 The Solution
+## 🔁 A Solução
 
-**Agent Ops Workflow** is a structured, repeatable daily cycle that gives your Hermes agent team a shared operating system. It's simple by design, rigorous by convention.
+O **Agent Ops Workflow** é um ciclo diário estruturado e repetível que dá à sua equipe de agentes Hermes um sistema operacional compartilhado. Simples por design, rigoroso por convenção.
 
-### The 6-Phase Cycle
+### O Ciclo de 6 Fases
 
 ```
 ┌──────────┐     ┌──────────┐     ┌──────────┐
-│   PLAN   │ ──→ │ APPROVE  │ ──→ │ DELEGATE │
+│ PLANEJAR │ ──→ │ APROVAR  │ ──→ │ DELEGAR  │
 └──────────┘     └──────────┘     └──────────┘
                                          │
                                          ▼
 ┌──────────┐     ┌──────────┐     ┌──────────┐
-│  REPORT  │ ←── │  AUDIT   │ ←── │ EXECUTE  │
+│ REPORTAR │ ←── │ AUDITAR  │ ←── │ EXECUTAR │
 └──────────┘     └──────────┘     └──────────┘
 ```
 
-| Phase | What Happens |
-|-------|-------------|
-| **📋 Plan** | The orchestrator creates a daily plan (`PLANO.md`) with waves, tasks, priorities, and dependencies |
-| **✅ Approve** | A human (or lead agent) reviews and signs off on the plan before execution begins |
-| **🎯 Delegate** | Tasks are assigned to specific agents via Slack or direct channel — one agent, one task |
-| **⚡ Execute** | Each agent runs their task with the designated engine, following detailed instructions |
-| **🔍 Audit** | A different agent cross-checks every completed task for quality and correctness |
-| **📊 Report** | Results are logged, the index is updated, and progress is committed for the next cycle |
+| Fase | O que acontece |
+|------|---------------|
+| **📋 Planejar** | O orquestrador cria um plano diário (`PLANO.md`) com waves, tarefas, prioridades e dependências |
+| **✅ Aprovar** | Um humano (ou agente líder) revisa e autoriza o plano antes da execução |
+| **🎯 Delegar** | As tarefas são atribuídas a agentes específicos via Slack ou canal direto — um agente, uma tarefa |
+| **⚡ Executar** | Cada agente executa sua tarefa com o motor designado, seguindo instruções detalhadas |
+| **🔍 Auditar** | Um agente diferente verifica cada tarefa concluída para garantir qualidade e corretude |
+| **📊 Reportar** | Os resultados são registrados, o índice é atualizado e o progresso é commitado para o próximo ciclo |
 
-The cycle repeats daily. Each day starts from the previous day's report, creating a continuous chain of context.
+O ciclo se repete diariamente. Cada dia começa a partir do relatório do dia anterior, criando uma corrente contínua de contexto.
 
 ---
 
 ## 🚀 Quickstart
 
-Get a team running in under 60 seconds.
+Coloque sua equipe para funcionar em menos de 60 segundos.
 
 ```bash
-# 1. Clone the repository
+# 1. Clone o repositório
 git clone https://github.com/rafael-fae/agent-ops-worflow.git
 cd agent-ops-workflow
 
-# 2. Run the setup wizard
-./scripts/setup-workflow.sh ~/my-project "{{TEAM_NAME}}" "{{PROJECT_NAME}}"
+# 2. Execute o setup interativo
+./scripts/setup-workflow.sh ~/meu-projeto "{{TEAM_NAME}}" "{{PROJECT_NAME}}"
 
-# 3. Review and customize your first daily plan
+# 3. Revise e personalize seu primeiro plano diário
 open planejamento-diario/$(date +%Y-%m-%d)/PLANO.md
 
-# 4. (Optional) Schedule daily plan generation via cron
+# 4. (Opcional) Agende a geração automática via cron
 crontab -e
-# Add: 0 5 * * * /path/to/scripts/gerar-plano-diario.sh ~/my-project --tasks=5
+# Adicione: 0 5 * * * /caminho/scripts/gerar-plano-diario.sh ~/meu-projeto --tasks=5
 ```
 
-That's it. Your team now has a daily planning system. Customize the templates, add your agents, and start shipping.
+Pronto. Sua equipe agora tem um sistema de planejamento diário. Personalize os templates, adicione seus agentes e comece a produzir.
 
 ---
 
-## 📁 Repository Structure
+## 📁 Estrutura do Repositório
 
 ```
 agent-ops-workflow/
 │
-├── planejamento-diario/        # 📅 Daily plans — the workflow running itself
-│   ├── INDICE.md               # Master index with progress tracking
-│   ├── TEMPLATES/              # Ready-to-use template copies
-│   └── YYYY-MM-DD/             # Per-day plan folders
-│       ├── PLANO.md            # Daily execution plan (waves, tasks, deps)
-│       ├── task_01.md          # Individual task with instructions
+├── planejamento-diario/        # 📅 Planos diários — o workflow funcionando nele mesmo
+│   ├── INDICE.md               # Índice mestre com acompanhamento de progresso
+│   ├── TEMPLATES/              # Cópias prontas para uso dos templates
+│   └── YYYY-MM-DD/             # Pastas de cada dia
+│       ├── PLANO.md            # Plano de execução diária (waves, tasks, deps)
+│       ├── task_01.md          # Tarefa individual com instruções
 │       └── task_02.md ...
 │
-├── templates/                  # 📄 Source of truth for all templates
-│   ├── PLANO.md.tpl            # Daily plan template (generic placeholders)
-│   ├── TASK.md.tpl             # Individual task template
-│   ├── INDICE.md.tpl           # Progress index template
-│   └── README-WORKFLOW.md.tpl  # README for the planejamento-diario/ folder
+├── templates/                  # 📄 Fonte oficial de todos os templates
+│   ├── PLANO.md.tpl            # Template de plano diário (placeholders genéricos)
+│   ├── TASK.md.tpl             # Template de tarefa individual
+│   ├── INDICE.md.tpl           # Template de índice de progresso
+│   └── README-WORKFLOW.md.tpl  # README da pasta planejamento-diario/
 │
-├── scripts/                    # ⚙️ Automation toolbelt
-│   ├── setup-workflow.sh       # One-shot project initialization
-│   ├── gerar-plano-diario.sh   # Cron-ready daily plan generator
-│   ├── validate-workflow.sh    # Integrity & consistency auditor
-│   └── rotate-key.sh           # SSH key rotation (generic)
+├── scripts/                    # ⚙️ Kit de ferramentas de automação
+│   ├── setup-workflow.sh       # Inicialização rápida do projeto
+│   ├── gerar-plano-diario.sh   # Gerador automático de planos (cron-ready)
+│   ├── validate-workflow.sh    # Auditoria de integridade e consistência
+│   └── rotate-key.sh           # Rotação de chaves SSH (genérico)
 │
-├── docs/                       # 📖 Full documentation
-│   ├── setup.md                # Environment & tooling setup
-│   ├── daily-cycle.md          # Step-by-step daily workflow
-│   ├── slack-protocol.md       # Agent communication via Slack
-│   ├── skills-guide.md         # Skills + adaptation guide
-│   └── best-practices.md       # Tips, pitfalls, conventions
+├── docs/                       # 📖 Documentação completa
+│   ├── setup.md                # Configuração de ambiente e ferramentas
+│   ├── daily-cycle.md          # Passo a passo do ciclo diário
+│   ├── slack-protocol.md       # Comunicação entre agentes via Slack
+│   ├── skills-guide.md         # Guia de adaptação de skills
+│   └── best-practices.md       # Dicas, pitfalls e convenções
 │
-├── LICENSE                     # MIT License
-├── .gitignore                  # Ignores files/ (raw team data)
-└── README.md                   # ← You are here
+├── LICENSE                     # Licença MIT
+├── .gitignore                  # Ignora files/ (dados brutos do time)
+├── README.md                   # ← Você está aqui
+└── README-en.md                # 🌐 Versão em inglês
 ```
 
-> **Note:** The `docs/` folder is created during initial setup. All documentation is designed to be read in under 5 minutes per section.
+> **Nota:** A pasta `docs/` é criada durante o setup inicial. Cada documento leva menos de 5 minutos para ser lido.
 
 ---
 
-## ✨ Features
+## ✨ Funcionalidades
 
-- **📝 Markdown Templates** — Fully commented, placeholder-driven templates for plans, tasks, and indexes. Copy, paste, adapt.
-- **🔁 Daily Cycle Automation** — Cron-ready script (`gerar-plano-diario.sh`) that auto-generates daily plans at 5 AM.
-- **🧩 Multi-Agent Delegation** — Assign tasks to specific agents with explicit engine requirements per task.
-- **🔐 Slack Protocol** — Structured agent communication via Slack with mention-based dispatch and zero cross-talk.
-- **📊 Audit Trail** — Every task has a conclusion section with agent, timestamp, engine used, and observations. Cross-audited by another agent.
-- **✅ Built-in Validation** — `validate-workflow.sh` checks structure integrity, index counters, checkbox fill rates, and plan-to-disk consistency.
-- **🌐 Language Agnostic** — Templates support any language. Switch between pt-BR and en-US by changing a single placeholder.
-- **🔧 Engine Routing** — Pin specific AI engines (Opus, Gemini, GPT-4, etc.) per task to ensure the right model for the right job.
-- **⚠️ Lockdown Protocol** — Emergency stop mechanism via Slack: "sinal vermelho" freezes all agents instantly.
-- **🔄 Self-Documenting** — The repository documents its own creation process via `planejamento-diario/`. Proof that it works.
+- **📝 Templates Markdown** — Templates completos com comentários e placeholders para planos, tarefas e índices. Copie, cole, adapte.
+- **🔁 Automação do Ciclo Diário** — Script pronto para cron (`gerar-plano-diario.sh`) que gera planos automaticamente às 5h da manhã.
+- **🧩 Delegação Multi-Agente** — Atribua tarefas a agentes específicos com exigências explícitas de motor por tarefa.
+- **🔐 Protocolo Slack** — Comunicação estruturada entre agentes via Slack com despacho por menção e zero interferência cruzada.
+- **📊 Trilha de Auditoria** — Toda tarefa tem seção de conclusão com agente, timestamp, motor utilizado e observações. Auditada por outro agente.
+- **✅ Validação Embutida** — `validate-workflow.sh` verifica integridade da estrutura, contadores do índice, preenchimento de checkboxes e consistência plano-vs-disco.
+- **🌐 Agnóstico de Idioma** — Templates suportam qualquer idioma. Alterne entre pt-BR e en-US trocando um único placeholder.
+- **🔧 Roteamento de Motores** — Defina motores de IA específicos (Opus, Gemini, GPT-4, etc.) por tarefa para garantir o modelo certo para o trabalho certo.
+- **⚠️ Protocolo de Lockdown** — Mecanismo de parada de emergência via Slack que congela todos os agentes instantaneamente.
+- **🔄 Autodocumentável** — O repositório documenta o próprio processo de criação via `planejamento-diario/`. Prova de que funciona.
 
 ---
 
-## 🎯 For Whom
+## 🎯 Para Quem
 
-This workflow is designed for:
+Este workflow foi projetado para:
 
-| Role | How They Benefit |
-|------|-----------------|
-| **Hermes Users** | Get a structured daily workflow that solves the no-memory problem out of the box |
-| **Multi-Agent Teams** | Coordinate 3+ agents with clear task boundaries, engine assignments, and cross-auditing |
-| **Orchestrators / Leads** | One person sets the daily plan, delegates, and reviews — no micromanagement needed |
-| **Ops Engineers** | Automation scripts integrate with cron, CI/CD pipelines, and existing toolchains |
-| **Open Source Contributors** | Clean templates and clear documentation make onboarding trivial |
-| **Anyone running AI agents** | If you're running more than one agent per day, you need this system |
+| Papel | Como se Beneficia |
+|-------|------------------|
+| **Usuários do Hermes** | Têm um workflow diário estruturado que resolve o problema de falta de memória entre sessões |
+| **Equipes Multi-Agente** | Coordenam 3+ agentes com limites claros de tarefa, atribuição de motores e auditoria cruzada |
+| **Orquestradores / Líderes** | Uma pessoa define o plano do dia, delega e revisa — sem microgerenciamento |
+| **Engenheiros de Operações** | Scripts de automação integram com cron, pipelines de CI/CD e ferramentas existentes |
+| **Contribuidores Open Source** | Templates limpos e documentação clara tornam o onboarding trivial |
+| **Qualquer um com agentes de IA** | Se você executa mais de um agente por dia, você precisa deste sistema |
 
-### Prerequisites
+### Pré-requisitos
 
-- **Hermes Agent** installed and configured
+- **Hermes Agent** instalado e configurado
 - **bash >= 4** (macOS / Linux)
-- **git** for version control
-- Optional: **Slack workspace** for agent communication channel
+- **git** para controle de versão
+- Opcional: **Slack** para canal de comunicação entre agentes
 
 ---
 
-## 📚 Documentation
+## 📚 Documentação
 
-| Guide | Description |
-|-------|-------------|
-| [Setup Guide](docs/setup.md) | Install dependencies, configure Hermes, and initialize your first project |
-| [Daily Cycle](docs/daily-cycle.md) | Step-by-step walkthrough of the 6-phase cycle |
-| [Slack Protocol](docs/slack-protocol.md) | Agent communication patterns, mention system, and zero-cross-talk |
-| [Skills Guide](docs/skills-guide.md) | How to adapt, sanitize, and share skills across teams |
-| [Best Practices](docs/best-practices.md) | Common pitfalls, conventions, and optimization tips |
+| Guia | Descrição |
+|------|-----------|
+| [Guia de Setup](docs/setup.md) | Instale dependências, configure o Hermes e inicialize seu primeiro projeto |
+| [Ciclo Diário](docs/daily-cycle.md) | Passo a passo completo do ciclo de 6 fases |
+| [Protocolo Slack](docs/slack-protocol.md) | Padrões de comunicação entre agentes, sistema de menções e zero cross-talk |
+| [Guia de Skills](docs/skills-guide.md) | Como adaptar, sanitizar e compartilhar skills entre equipes |
+| [Boas Práticas](docs/best-practices.md) | Pitfalls comuns, convenções e dicas de otimização |
 
 ---
 
-## 📄 License
+## 📄 Licença
 
-This project is open source under the **MIT License**. See [LICENSE](LICENSE) for details.
+Este projeto é open source sob a **Licença MIT**. Consulte [LICENSE](LICENSE) para detalhes.
 
 <p align="center">
-  <sub>Built for Hermes Agent teams. Fork it, adapt it, make it yours.</sub>
+  <sub>Feito para equipes Hermes. Fork, adapte, faça seu.</sub>
   <br>
-  <sub>© 2026 — MIT License</sub>
+  <sub>© 2026 — Licença MIT</sub>
 </p>
