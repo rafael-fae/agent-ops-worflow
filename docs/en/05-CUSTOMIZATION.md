@@ -459,7 +459,7 @@ When you run `setup-workflow.sh`, these are copied to your project's
 | Checklist | Standard verification items | `Testes unitarios passaram` |
 | Conclusion | Custom fields if needed | Add `Jira ticket` if you use Jira |
 
-#### INDICE.md.tpl
+#### INDEX.md.tpl
 
 | Section | What to Change | Example |
 |---------|---------------|---------|

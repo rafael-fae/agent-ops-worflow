@@ -137,7 +137,7 @@ agent-ops-workflow/
 ├── templates/en/               # 🌐 English templates (🇺🇸 en-US)
 │   ├── PLANO.md.tpl
 │   ├── TASK.md.tpl
-│   ├── INDICE.md.tpl
+│   ├── INDEX.md.tpl
 │   └── README-WORKFLOW.md.tpl
 │
 ├── skills/                     # 🧠 Hermes skills (sanitized, 43 skills)

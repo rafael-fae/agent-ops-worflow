@@ -29,7 +29,7 @@ project/
     ├── TEMPLATES/             ← Template files (don't edit directly)
     │   ├── PLANO.md           ← Copied from templates/PLANO.md.tpl
     │   ├── TASK.md            ← Copied from templates/TASK.md.tpl
-    │   └── INDICE.md          ← Copied from templates/INDICE.md.tpl
+    │   └── INDICE.md          ← Copied from templates/INDEX.md.tpl
     └── YYYY-MM-DD/            ← One directory per day
         ├── PLANO.md           ← Day's plan (waves, tasks, status)
         ├── task_01.md         ← Individual task brief + checklist
@@ -42,7 +42,7 @@ project/
 ```
 agent-ops-workflow/
 ├── planejamento-diario/    # Dogfooding — the workflow running on itself
-├── templates/              # Source of truth: PLANO.md.tpl, TASK.md.tpl, INDICE.md.tpl
+├── templates/              # Source of truth: PLANO.md.tpl, TASK.md.tpl, INDEX.md.tpl
 ├── scripts/                # setup-workflow.sh, gerar-plano-diario.sh, validate-workflow.sh, rotate-key.sh
 ├── docs/en/               # Full documentation (6 guides in English)
 ├── files/                  # Working area — NOT committed (.gitignored)

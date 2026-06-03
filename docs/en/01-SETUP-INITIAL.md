@@ -123,7 +123,7 @@ agent-ops-workflow/
 ├── templates/             # Source of truth for all templates
 │   ├── PLANO.md.tpl             # Daily plan template
 │   ├── TASK.md.tpl              # Individual task template
-│   ├── INDICE.md.tpl            # Progress index template
+│   ├── INDEX.md.tpl            # Progress index template
 │   └── README-WORKFLOW.md.tpl   # Folder README template
 ├── docs/                  # Full documentation (you are here)
 ├── planejamento-diario/   # The workflow running on itself

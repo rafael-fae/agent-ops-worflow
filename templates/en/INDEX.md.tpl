@@ -1,6 +1,6 @@
 <!--
 ==============================================================================
-  INDICE.md.tpl — Generic Planning Index Template
+  INDEX.md.tpl — Generic Planning Index Template
   ============================================================================
   This is the template for the overall daily planning index.
   Copy to planejamento-diario/INDICE.md and fill in.
