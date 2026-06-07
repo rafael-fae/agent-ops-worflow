@@ -86,8 +86,8 @@ cd agent-ops-workflow
 
 # 2. Leia a documentação na ordem:
 #    docs/00-HERMES-BASICS.md   → Instalar Hermes + 1º agente
-#    docs/09-SLACK-AGENT-SETUP.md → Configurar Slack + personalidade
-#    docs/01-CONFIGURACAO-INICIAL.md → Estruturar planejamento diário
+#    docs/03-SLACK-AGENT-SETUP.md → Configurar Slack + personalidade
+#    docs/01-SETUP-WORKFLOW.md → Estruturar planejamento diário
 
 # 3. Execute o setup interativo
 ./scripts/setup.sh
@@ -115,17 +115,17 @@ agent-ops-workflow/
 │
 ├── docs/                       # 📖 Documentação principal (🇧🇷 pt-BR)
 │   ├── 00-HERMES-BASICS.md      # O que é Hermes, instalação, 1º agente
-│   ├── 01-CONFIGURACAO-INICIAL.md
-│   ├── 02-CICLO-DIARIO.md
-│   ├── 03-PROTOCOLO-SLACK.md
-│   ├── 04-GUIA-SKILLS.md
-│   ├── 05-PERSONALIZACAO.md
-│   ├── 06-REFERENCIA-RAPIDA.md
-│   ├── 07-AUTOMACAO-DIARIA.md
-│   ├── 08-TOKENS-AGENTES.md
-│   ├── 09-SLACK-AGENT-SETUP.md   # Slack App, personalidade, memória
-│   ├── 10-MEMORIA-OPERACIONAL.md  # DIARIO.md + ESTADO-DA-EQUIPE.md (1.057 linhas)
-│   └── 11-DUCKDB-CACHE.md         # Pipeline DuckDB + 3 camadas de segurança (902 linhas)
+│   ├── 01-SETUP-WORKFLOW.md
+│   ├── 06-CICLO-DIARIO.md
+│   ├── 05-PROTOCOLO-SLACK.md
+│   ├── 07-GUIA-SKILLS.md
+│   ├── 02-PERSONALIZACAO-PERFIS.md
+│   ├── 11-REFERENCIA-RAPIDA.md
+│   ├── 08-AUTOMACAO-E-CICD.md
+│   ├── 04-TOKENS-E-PERMISSOES.md
+│   ├── 03-SLACK-AGENT-SETUP.md   # Slack App, personalidade, memória
+│   ├── 09-MEMORIA-OPERACIONAL.md  # DIARIO.md + ESTADO-DA-EQUIPE.md (1.057 linhas)
+│   └── 10-DUCKDB-CACHE.md         # Pipeline DuckDB + 3 camadas de segurança (902 linhas)
 │
 ├── docs/en/                    # 🌐 Documentação em inglês (🇺🇸 en-US)
 │   ├── 01-SETUP-INITIAL.md
@@ -212,14 +212,14 @@ Este workflow foi projetado para:
 
 | Guia | Descrição |
 |------|-----------|
-| [Guia de Setup](docs/01-CONFIGURACAO-INICIAL.md) | Instale dependências, configure o Hermes e inicialize seu primeiro projeto |
-| [Ciclo Diário](docs/02-CICLO-DIARIO.md) | Passo a passo completo do ciclo de 6 fases |
-| [Protocolo Slack](docs/03-PROTOCOLO-SLACK.md) | Padrões de comunicação entre agentes, sistema de menções e zero cross-talk |
-| [Guia de Skills](docs/04-GUIA-SKILLS.md) | Como adaptar, sanitizar e compartilhar skills entre equipes |
-| [Personalização](docs/05-PERSONALIZACAO.md) | Escolha de nomes, papéis, motores e exemplos práticos |
-| [Referência Rápida](docs/06-REFERENCIA-RAPIDA.md) | Cheat sheet de 1 página com comandos, estrutura e regras |
-| [Automação Diária](docs/07-AUTOMACAO-DIARIA.md) | Todos os fluxos automatizados: cron, Hermes, shell scripts e monitoramento |
-| [Tokens GitHub para Agentes](docs/08-TOKENS-AGENTES.md) | Configuração de tokens individuais para cada agente Hermes commitar |
+| [Guia de Setup](docs/01-SETUP-WORKFLOW.md) | Instale dependências, configure o Hermes e inicialize seu primeiro projeto |
+| [Ciclo Diário](docs/06-CICLO-DIARIO.md) | Passo a passo completo do ciclo de 6 fases |
+| [Protocolo Slack](docs/05-PROTOCOLO-SLACK.md) | Padrões de comunicação entre agentes, sistema de menções e zero cross-talk |
+| [Guia de Skills](docs/07-GUIA-SKILLS.md) | Como adaptar, sanitizar e compartilhar skills entre equipes |
+| [Personalização](docs/02-PERSONALIZACAO-PERFIS.md) | Escolha de nomes, papéis, motores e exemplos práticos |
+| [Referência Rápida](docs/11-REFERENCIA-RAPIDA.md) | Cheat sheet de 1 página com comandos, estrutura e regras |
+| [Automação Diária](docs/08-AUTOMACAO-E-CICD.md) | Todos os fluxos automatizados: cron, Hermes, shell scripts e monitoramento |
+| [Tokens GitHub para Agentes](docs/04-TOKENS-E-PERMISSOES.md) | Configuração de tokens individuais para cada agente Hermes commitar |
 
 ---
 

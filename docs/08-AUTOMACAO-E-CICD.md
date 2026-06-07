@@ -293,7 +293,7 @@ Conforme documentado na skill `planejamento-diario`:
 
 ### Manual (via Slack)
 
-Este é o fluxo documentado em `03-PROTOCOLO-SLACK.md`. O Orquestrador posta
+Este é o fluxo documentado em `05-PROTOCOLO-SLACK.md`. O Orquestrador posta
 cada task como uma mensagem de nível superior no canal `#agent-ops-nova`,
 com `<@USER_ID>` no início e o template completo de delegação.
 

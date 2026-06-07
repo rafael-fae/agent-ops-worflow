@@ -79,7 +79,7 @@ comentário:
 <!--
 Arquivo sanitizado para agent-ops-workflow.
 Substitua os placeholders {{...}} pelos valores do seu time.
-Veja docs/04-GUIA-SKILLS.md para instruções completas.
+Veja docs/07-GUIA-SKILLS.md para instruções completas.
 -->
 ```
 

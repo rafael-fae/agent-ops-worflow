@@ -1,4 +1,4 @@
-# 11 — Piloto DuckDB Cache: Cache Local com DuckDB + Markdown Snapshots
+# 10 — Piloto DuckDB Cache: Cache Local com DuckDB + Markdown Snapshots
 
 > **Propósito deste documento:** Apresentar o Piloto DuckDB Cache — uma solução de cache
 > local para consultas de banco de dados que transforma resultados SQL em arquivos
@@ -897,6 +897,6 @@ git commit -m "📸 snapshots: atualização automática $(date +%Y-%m-%d)"
 > novas fontes no `sources.yaml`.
 >
 > Veja também:
-> - [01-CONFIGURACAO-INICIAL.md](./01-CONFIGURACAO-INICIAL.md) — Configuração do Hermes Agent
-> - [07-AUTOMACAO-DIARIA.md](./07-AUTOMACAO-DIARIA.md) — Automação com cron jobs
-> - [10-MEMORIA-OPERACIONAL.md](./10-MEMORIA-OPERACIONAL.md) — Memória operacional do agente
+> - [01-SETUP-WORKFLOW.md](./01-SETUP-WORKFLOW.md) — Configuração do Hermes Agent
+> - [08-AUTOMACAO-E-CICD.md](./08-AUTOMACAO-E-CICD.md) — Automação com cron jobs
+> - [09-MEMORIA-OPERACIONAL.md](./09-MEMORIA-OPERACIONAL.md) — Memória operacional do agente

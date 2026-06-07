@@ -113,12 +113,12 @@ agent-ops-workflow/
 │   └── TEMPLATE_PLANO.md
 │
 ├── docs/                       # 📖 Main documentation (🇧🇷 pt-BR)
-│   ├── 01-CONFIGURACAO-INICIAL.md
-│   ├── 02-CICLO-DIARIO.md
-│   ├── 03-PROTOCOLO-SLACK.md
-│   ├── 04-GUIA-SKILLS.md
-│   ├── 05-PERSONALIZACAO.md
-│   └── 06-REFERENCIA-RAPIDA.md
+│   ├── 01-SETUP-WORKFLOW.md
+│   ├── 06-CICLO-DIARIO.md
+│   ├── 05-PROTOCOLO-SLACK.md
+│   ├── 07-GUIA-SKILLS.md
+│   ├── 02-PERSONALIZACAO-PERFIS.md
+│   └── 11-REFERENCIA-RAPIDA.md
 │
 ├── docs/en/                    # 🌐 English documentation (🇺🇸 en-US)
 │   ├── 01-SETUP-INITIAL.md

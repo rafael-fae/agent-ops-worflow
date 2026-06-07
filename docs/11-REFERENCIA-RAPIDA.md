@@ -170,12 +170,12 @@ Todo arquivo de tarefa deve conter:
 
 | Arquivo | Propósito |
 |---------|-----------|
-| `docs/01-CONFIGURACAO-INICIAL.md` | Configuração de ambiente, pré-requisitos, primeira execução |
-| `docs/02-CICLO-DIARIO.md` | Passo a passo do ciclo de 6 fases |
-| `docs/03-PROTOCOLO-SLACK.md` | Regras de comunicação de agentes |
-| `docs/04-GUIA-SKILLS.md` | Referência completa de skills, criação, adaptação |
-| `docs/05-PERSONALIZACAO.md` | Configuração do time, templates, motores |
-| `docs/06-REFERENCIA-RAPIDA.md` | Dicas, armadilhas, convenções |
+| `docs/01-SETUP-WORKFLOW.md` | Configuração de ambiente, pré-requisitos, primeira execução |
+| `docs/06-CICLO-DIARIO.md` | Passo a passo do ciclo de 6 fases |
+| `docs/05-PROTOCOLO-SLACK.md` | Regras de comunicação de agentes |
+| `docs/07-GUIA-SKILLS.md` | Referência completa de skills, criação, adaptação |
+| `docs/02-PERSONALIZACAO-PERFIS.md` | Configuração do time, templates, motores |
+| `docs/11-REFERENCIA-RAPIDA.md` | Dicas, armadilhas, convenções |
 
 ---
 

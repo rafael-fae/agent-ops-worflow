@@ -666,6 +666,6 @@ O bot deve responder.
 
 ---
 
-> **Próximo passo:** Consulte `04-GUIA-SKILLS.md` para adicionar habilidades
-> ao seu agente, ou `05-PERSONALIZACAO.md` para ajustes finos de
+> **Próximo passo:** Consulte `07-GUIA-SKILLS.md` para adicionar habilidades
+> ao seu agente, ou `02-PERSONALIZACAO-PERFIS.md` para ajustes finos de
 > comportamento.

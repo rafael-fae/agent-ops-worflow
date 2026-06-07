@@ -21,6 +21,17 @@
 
 ---
 
+
+---
+
+## ⚡ Setup Rápido (5 Min) vs. Setup Completo (2h)
+
+Antes de prosseguir, escolha o seu caminho com base na sua necessidade:
+
+*   **Setup Rápido (5 Minutos) — RECOMENDADO:** Se você quer ver o workflow funcionando imediatamente e possui o Hermes instalado, pode delegar a criação do ambiente para o próprio agente. Basta fornecer o arquivo [INSTALL-VIA-AGENT.md](../INSTALL-VIA-AGENT.md) na raiz do repositório para o seu agente Hermes e ele fará toda a configuração de pastas, cópia de templates e validação de forma autônoma.
+*   **Setup Completo (2 Horas):** Se você quer fazer a configuração manual de produção passo a passo, integrando canais reais do Slack, gerando chaves SSH dedicadas e configurando automações diárias (cron/CI-CD). Siga este guia até o fim.
+
+---
 ## Pré-requisitos
 
 Antes de começar, certifique-se de que seu ambiente possui as seguintes
@@ -644,10 +655,10 @@ Avisos de validação comuns e como resolvê-los:
 Após a configuração estar completa, sua equipe está pronta para o primeiro
 ciclo diário.
 
-1. **Leia o Guia do Ciclo Diário** (`02-CICLO-DIARIO.md`) — Entenda as 6
+1. **Leia o Guia do Ciclo Diário** (`06-CICLO-DIARIO.md`) — Entenda as 6
    fases (Planejar → Aprovar → Delegar → Executar → Auditar → Reportar).
 
-2. **Leia o Protocolo Slack** (`03-PROTOCOLO-SLACK.md`) — Aprenda como os
+2. **Leia o Protocolo Slack** (`05-PROTOCOLO-SLACK.md`) — Aprenda como os
    agentes se comunicam, o sistema de menções, regras de thread e
    procedimentos de lock down.
 
@@ -751,4 +762,4 @@ Para aplicar esta configuração em todos os agentes da sua equipe, edite o `con
 
 > Configuração completa. Sua equipe agora tem um sistema de planejamento diário
 > multi-agente testado em produção rodando no Hermes. O próximo passo é
-> aprender o ciclo diário — vá para `02-CICLO-DIARIO.md`.
+> aprender o ciclo diário — vá para `06-CICLO-DIARIO.md`.

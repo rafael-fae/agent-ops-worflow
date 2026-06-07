@@ -811,7 +811,7 @@ playbook para cada modo de falha.
 
 **Sintoma:** Comandante publica "LOCKDOWN" ou "sinal vermelho" no canal.
 
-**Procedimento:** Veja [03-PROTOCOLO-SLACK.md](03-PROTOCOLO-SLACK.md) para o
+**Procedimento:** Veja [05-PROTOCOLO-SLACK.md](05-PROTOCOLO-SLACK.md) para o
 protocolo completo de lockdown. Em resumo:
 1. Todos os agentes congelam imediatamente.
 2. Sem novas ações, commits ou mensagens.

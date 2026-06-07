@@ -342,7 +342,7 @@ Estrutura criada:
 - Scripts auxiliares copiados
 
 Próximos passos:
-1. Configurar Slack (se desejado) — veja docs/09-SLACK-AGENT-SETUP.md
-2. Criar primeira task — veja docs/06-REFERENCIA-RAPIDA.md
-3. Iniciar ciclo diário — veja docs/02-CICLO-DIARIO.md
+1. Configurar Slack (se desejado) — veja docs/03-SLACK-AGENT-SETUP.md
+2. Criar primeira task — veja docs/11-REFERENCIA-RAPIDA.md
+3. Iniciar ciclo diário — veja docs/06-CICLO-DIARIO.md
 ```

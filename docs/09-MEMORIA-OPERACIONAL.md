@@ -992,8 +992,8 @@ RESULTADO: DIARIO preenchido. ESTADO-DA-EQUIPE atualizado. Time sincronizado.
 
 | Documento | O que contém | Localização |
 |-----------|-------------|-------------|
-| Guia de Configuração Inicial | Setup completo de perfis Hermes | `docs/01-CONFIGURACAO-INICIAL.md` |
-| Ciclo Diário | 6 fases do workflow operacional | `docs/02-CICLO-DIARIO.md` |
+| Guia de Configuração Inicial | Setup completo de perfis Hermes | `docs/01-SETUP-WORKFLOW.md` |
+| Ciclo Diário | 6 fases do workflow operacional | `docs/06-CICLO-DIARIO.md` |
 | Gestão de Contexto Operacional | Skill de manutenção do contexto | `skills/operacao/gestao-contexto-operacional/SKILL.md` |
 | Lições Operacionais 06/06/2026 | Diagnóstico completo dos problemas | `skills/.../references/licoes-06-06-2026.md` |
 
