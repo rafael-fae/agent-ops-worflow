@@ -113,20 +113,32 @@ agent-ops-workflow/
 │   └── TEMPLATE_PLANO.md
 │
 ├── docs/                       # 📖 Main documentation (🇧🇷 pt-BR)
+│   ├── 00-HERMES-BASICS.md
 │   ├── 01-SETUP-WORKFLOW.md
-│   ├── 06-CICLO-DIARIO.md
-│   ├── 05-PROTOCOLO-SLACK.md
-│   ├── 07-GUIA-SKILLS.md
 │   ├── 02-PERSONALIZACAO-PERFIS.md
+│   ├── 03-SLACK-AGENT-SETUP.md
+│   ├── 04-TOKENS-E-PERMISSOES.md
+│   ├── 05-PROTOCOLO-SLACK.md
+│   ├── 06-CICLO-DIARIO.md
+│   ├── 07-GUIA-SKILLS.md
+│   ├── 08-AUTOMACAO-E-CICD.md
+│   ├── 09-MEMORIA-OPERACIONAL.md
+│   ├── 10-DUCKDB-CACHE.md
 │   └── 11-REFERENCIA-RAPIDA.md
 │
 ├── docs/en/                    # 🌐 English documentation (🇺🇸 en-US)
+│   ├── 00-HERMES-BASICS.md
 │   ├── 01-SETUP-INITIAL.md
-│   ├── 02-DAILY-CYCLE.md
-│   ├── 03-SLACK-PROTOCOL.md
-│   ├── 04-SKILLS-GUIDE.md
-│   ├── 05-CUSTOMIZATION.md
-│   └── 06-QUICK-REFERENCE.md
+│   ├── 02-PERSONALIZACAO-PERFIS.md
+│   ├── 03-SLACK-AGENT-SETUP.md
+│   ├── 04-AGENT-TOKENS.md
+│   ├── 05-SLACK-PROTOCOL.md
+│   ├── 06-DAILY-CYCLE.md
+│   ├── 07-SKILLS-GUIDE.md
+│   ├── 08-DAILY-AUTOMATION.md
+│   ├── 09-MEMORIA-OPERACIONAL.md
+│   ├── 10-DUCKDB-CACHE.md
+│   └── 11-QUICK-REFERENCE.md
 │
 ├── templates/                  # 📄 Official templates (🇧🇷 pt-BR)
 │   ├── PLANO.md.tpl
@@ -201,16 +213,20 @@ This workflow is designed for:
 
 ## 📚 Documentation
 
-| Guide | Description |
-|-------|-------------|
-| [Setup Guide](docs/en/01-SETUP-INITIAL.md) | Install dependencies, configure Hermes, and initialize your first project |
-| [Daily Cycle](docs/en/02-DAILY-CYCLE.md) | Step-by-step walkthrough of the 6-phase cycle |
-| [Slack Protocol](docs/en/03-SLACK-PROTOCOL.md) | Agent communication patterns, mention system, and zero-cross-talk |
-| [Skills Guide](docs/en/04-SKILLS-GUIDE.md) | How to adapt, sanitize, and share skills across teams |
-| [Customization](docs/en/05-CUSTOMIZATION.md) | Choosing names, roles, engines, and practical examples |
-| [Quick Reference](docs/en/06-QUICK-REFERENCE.md) | 1-page cheat sheet with commands, structure, and rules |
-| [Daily Automation](docs/en/07-DAILY-AUTOMATION.md) | All automated flows: cron, Hermes, shell scripts, and monitoring |
-| [GitHub Tokens for Agents](docs/en/08-AGENT-TOKENS.md) | Individual token setup for each Hermes agent to commit |
+| # | Guide | Description |
+|---|-------|-------------|
+| 00 | [Hermes Basics](docs/en/00-HERMES-BASICS.md) | Hermes Agent fundamentals, installation, and first profile setup |
+| 01 | [Setup Guide](docs/en/01-SETUP-INITIAL.md) | Install dependencies, configure Hermes, and initialize your first project |
+| 02 | [Profile Customization](docs/en/02-PERSONALIZACAO-PERFIS.md) | Choosing names, roles, engines, and practical examples |
+| 03 | [Slack Agent Setup](docs/en/03-SLACK-AGENT-SETUP.md) | Workspace creation, Slack App manifest, tokens, and personality |
+| 04 | [Agent Tokens](docs/en/04-AGENT-TOKENS.md) | Individual token setup for each Hermes agent to commit |
+| 05 | [Slack Protocol](docs/en/05-SLACK-PROTOCOL.md) | Agent communication patterns, mention system, and zero-cross-talk |
+| 06 | [Daily Cycle](docs/en/06-DAILY-CYCLE.md) | Step-by-step walkthrough of the 6-phase cycle |
+| 07 | [Skills Guide](docs/en/07-SKILLS-GUIDE.md) | How to adapt, sanitize, and share skills across teams |
+| 08 | [Daily Automation](docs/en/08-DAILY-AUTOMATION.md) | All automated flows: cron, Hermes, shell scripts, and monitoring |
+| 09 | [Operational Memory](docs/en/09-MEMORIA-OPERACIONAL.md) | DIARY.md, TEAM-STATE.md, system prompt protocol, and multi-agent coordination |
+| 10 | [DuckDB Cache](docs/en/10-DUCKDB-CACHE.md) | Local cache with DuckDB + Markdown snapshots for fast agent context |
+| 11 | [Quick Reference](docs/en/11-QUICK-REFERENCE.md) | 1-page cheat sheet with commands, structure, and rules |
 
 ---
 

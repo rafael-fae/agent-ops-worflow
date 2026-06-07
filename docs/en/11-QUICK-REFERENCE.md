@@ -168,11 +168,11 @@ Every task file must contain:
 | File | Purpose |
 |------|---------|
 | `docs/en/01-SETUP-INITIAL.md` | Environment setup, prerequisites, first run |
-| `docs/en/02-DAILY-CYCLE.md` | Step-by-step of the 6-phase cycle |
-| `docs/en/03-SLACK-PROTOCOL.md` | Agent communication rules |
-| `docs/en/04-SKILLS-GUIDE.md` | Full skill reference, creation, adaptation |
-| `docs/en/05-CUSTOMIZATION.md` | Team setup, templates, engine config |
-| `docs/en/06-QUICK-REFERENCE.md` | Tips, pitfalls, conventions |
+| `docs/en/06-DAILY-CYCLE.md` | Step-by-step of the 6-phase cycle |
+| `docs/en/05-SLACK-PROTOCOL.md` | Agent communication rules |
+| `docs/en/07-SKILLS-GUIDE.md` | Full skill reference, creation, adaptation |
+| `docs/en/02-PERSONALIZACAO-PERFIS.md` | Team setup, templates, engine config |
+| `docs/en/11-QUICK-REFERENCE.md` | Tips, pitfalls, conventions |
 
 ---
 

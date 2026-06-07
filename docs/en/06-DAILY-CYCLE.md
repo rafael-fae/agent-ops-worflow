@@ -814,7 +814,7 @@ for each failure mode.
 
 **Symptom:** Commander posts "LOCKDOWN" or "sinal vermelho" in the channel.
 
-**Procedure:** See [03-SLACK-PROTOCOL.md](03-SLACK-PROTOCOL.md) for the
+**Procedure:** See [05-SLACK-PROTOCOL.md](05-SLACK-PROTOCOL.md) for the
 complete lockdown protocol. In short:
 1. All agents freeze immediately.
 2. No new actions, commits, or messages.

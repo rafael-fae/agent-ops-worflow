@@ -642,11 +642,8 @@ Common validation warnings and how to resolve them:
 
 Once setup is complete, your team is ready for the first daily cycle.
 
-1. **Read the Daily Cycle Guide** (`02-DAILY-CYCLE.md`) — Understand the 6
-   phases (Plan → Approve → Delegate → Execute → Audit → Report).
-
-2. **Read the Slack Protocol** (`03-SLACK-PROTOCOL.md`) — Learn how agents
-   communicate, the mention system, thread rules, and lockdown procedures.
+1. **Read the Daily Cycle Guide** (`06-DAILY-CYCLE.md`) — Understand the 6
+2. **Read the Slack Protocol** (`05-SLACK-PROTOCOL.md`) — Learn how agents
 
 3. **Run your first dry cycle** — Create a test day with 1-2 tasks, run
    through all 6 phases, and verify the loop closes cleanly.
@@ -694,4 +691,4 @@ Once setup is complete, your team is ready for the first daily cycle.
 
 > Setup complete. Your team now has a production-tested multi-agent daily
 > planning system running on Hermes. The next step is learning the daily
-> cycle — head to `02-DAILY-CYCLE.md`.
+> cycle — head to `06-DAILY-CYCLE.md`.

@@ -76,7 +76,7 @@ After the YAML frontmatter, a sanitized `SKILL.md` includes a comment header:
 <!--
 Sanitized file for agent-ops-workflow.
 Replace the {{...}} placeholders with your team's values.
-See docs/04-SKILLS-GUIDE.md for complete instructions.
+See docs/07-SKILLS-GUIDE.md for complete instructions.
 -->
 ```
 
