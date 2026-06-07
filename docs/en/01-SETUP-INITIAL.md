@@ -104,7 +104,7 @@ Start by cloning the agent-ops-workflow repository to your local machine.
 cd /path/to/your/projects
 
 # Clone the repository
-git clone https://github.com/rafael-fae/agent-ops-workflow.git
+git clone https://github.com/your-username/agent-ops-workflow.git
 cd agent-ops-workflow
 
 # Make scripts executable

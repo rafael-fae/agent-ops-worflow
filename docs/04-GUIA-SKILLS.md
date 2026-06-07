@@ -293,8 +293,8 @@ tokens `{{PLACEHOLDER}}`.
 | 20 | `git-vault-agent-pattern` | Agente utilitário Git-Vault — versionamento git dedicado para Obsidian vault | Baixa |
 | 21 | `prd-clone-exhaustivo` | Metodologia de clone exaustivo de PRD — módulo por módulo, página por página, campo por campo | Alta |
 | 22 | `clone-build-orchestration` | Orquestração de clone build — provisionamento de infra, configuração Django, deploy | Média |
-| 23 | `dontus-api-endpoints` | Referência de endpoints da API Dontus — documentação de integração | Baixa |
-| 24 | `dontus-relatorios-mapeamento` | Mapeamento de relatórios Dontus — geração de relatórios e extração de dados | Baixa |
+| 23 | `sistema-legado-api-endpoints` | Referência de endpoints da API do sistema legado — documentação de integração | Baixa |
+| 24 | `sistema-legado-relatorios-mapeamento` | Mapeamento de relatórios do sistema legado — geração de relatórios e extração de dados | Baixa |
 | 25 | `multi-tenant-discovery-re` | Descoberta e engenharia reversa multi-tenant — análise de schema | Média |
 | 26 | `server-migration-ovh` | Migração de servidor para OVH — planejamento, execução, verificação | Alta |
 | 27 | `ovh-server-migration` | Migração de servidor OVH (procedimento alternativo) — método de transferência alternativo | Alta |

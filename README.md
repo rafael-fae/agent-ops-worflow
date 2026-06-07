@@ -81,18 +81,19 @@ Coloque sua equipe para funcionar em menos de 60 segundos.
 
 ```bash
 # 1. Clone o repositório
-git clone https://github.com/rafael-fae/agent-ops-worflow.git
+git clone https://github.com/rafael-fae/agent-ops-workflow.git
 cd agent-ops-workflow
 
-# 2. Execute o setup interativo
-./scripts/setup-workflow.sh ~/meu-projeto "{{TEAM_NAME}}" "{{PROJECT_NAME}}"
+# 2. Leia a documentação na ordem:
+#    docs/00-HERMES-BASICS.md   → Instalar Hermes + 1º agente
+#    docs/09-SLACK-AGENT-SETUP.md → Configurar Slack + personalidade
+#    docs/01-CONFIGURACAO-INICIAL.md → Estruturar planejamento diário
 
-# 3. Revise e personalize seu primeiro plano diário
+# 3. Execute o setup interativo
+./scripts/setup.sh
+
+# 4. Revise e personalize seu primeiro plano diário
 open planejamento-diario/$(date +%Y-%m-%d)/PLANO.md
-
-# 4. (Opcional) Agende a geração automática via cron
-crontab -e
-# Adicione: 0 5 * * * /caminho/scripts/gerar-plano-diario.sh ~/meu-projeto --tasks=5
 ```
 
 Pronto. Sua equipe agora tem um sistema de planejamento diário. Personalize os templates, adicione seus agentes e comece a produzir.
@@ -113,12 +114,18 @@ agent-ops-workflow/
 │   └── TEMPLATE_PLANO.md
 │
 ├── docs/                       # 📖 Documentação principal (🇧🇷 pt-BR)
+│   ├── 00-HERMES-BASICS.md      # O que é Hermes, instalação, 1º agente
 │   ├── 01-CONFIGURACAO-INICIAL.md
 │   ├── 02-CICLO-DIARIO.md
 │   ├── 03-PROTOCOLO-SLACK.md
 │   ├── 04-GUIA-SKILLS.md
 │   ├── 05-PERSONALIZACAO.md
-│   └── 06-REFERENCIA-RAPIDA.md
+│   ├── 06-REFERENCIA-RAPIDA.md
+│   ├── 07-AUTOMACAO-DIARIA.md
+│   ├── 08-TOKENS-AGENTES.md
+│   ├── 09-SLACK-AGENT-SETUP.md   # Slack App, personalidade, memória
+│   ├── 10-MEMORIA-OPERACIONAL.md  # DIARIO.md + ESTADO-DA-EQUIPE.md (1.057 linhas)
+│   └── 11-DUCKDB-CACHE.md         # Pipeline DuckDB + 3 camadas de segurança (902 linhas)
 │
 ├── docs/en/                    # 🌐 Documentação em inglês (🇺🇸 en-US)
 │   ├── 01-SETUP-INITIAL.md
@@ -140,16 +147,18 @@ agent-ops-workflow/
 │   ├── INDICE.md.tpl
 │   └── README-WORKFLOW.md.tpl
 │
-├── skills/                     # 🧠 Skills Hermes (sanitizadas, 43 skills)
+├── skills/                     # 🧠 Skills Hermes (sanitizadas, 15 skills)
 │   ├── operacao/               # Skills operacionais (29)
 │   ├── devops/                 # Skills de DevOps (5)
 │   ├── security/               # Skills de segurança (2)
 │   └── ...                     # + skills avulsas (7)
 │
 ├── scripts/                    # ⚙️ Automação
+│   ├── setup.sh                 # 🚀 Setup completo (interativo, 6 fases)
 │   ├── setup-workflow.sh
 │   ├── gerar-plano-diario.sh
 │   ├── validate-workflow.sh
+│   ├── archive-skills.sh
 │   └── rotate-key.sh
 │
 ├── README.md                   # ← Você está aqui (🇧🇷 pt-BR)

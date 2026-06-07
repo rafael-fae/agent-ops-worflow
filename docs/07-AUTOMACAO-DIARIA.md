@@ -117,9 +117,9 @@ O `PLANO.md` gerado contém:
 crontab -e
 
 # Adicionar esta linha:
-0 5 * * * /Users/rafaelfae/Dev/agent-ops-workflow/scripts/gerar-plano-diario.sh \
-  /Users/rafaelfae/Dev/meu-projeto \
-  >> /Users/rafaelfae/Dev/meu-projeto/planejamento-diario/cron.log 2>&1
+0 5 * * * /Users/seu-usuario/Dev/agent-ops-workflow/scripts/gerar-plano-diario.sh \
+  /Users/seu-usuario/Dev/meu-projeto \
+  >> /Users/seu-usuario/Dev/meu-projeto/planejamento-diario/cron.log 2>&1
 ```
 
 #### Variáveis de ambiente para o cron
@@ -142,9 +142,9 @@ export WORKFLOW_TEAM_NAME="Time Nova"
 export WORKFLOW_PROJECT_NAME="Projeto Atlas"
 export PATH="/usr/local/bin:/usr/bin:/bin:$PATH"
 
-cd /Users/rafaelfae/Dev/agent-ops-workflow
-./scripts/gerar-plano-diario.sh /Users/rafaelfae/Dev/meu-projeto --tasks=5 \
-  >> /Users/rafaelfae/Dev/meu-projeto/planejamento-diario/cron.log 2>&1
+cd /Users/seu-usuario/Dev/agent-ops-workflow
+./scripts/gerar-plano-diario.sh /Users/seu-usuario/Dev/meu-projeto --tasks=5 \
+  >> /Users/seu-usuario/Dev/meu-projeto/planejamento-diario/cron.log 2>&1
 ```
 
 #### Logs
@@ -212,11 +212,11 @@ REGRAS:
 
 ```bash
 # No crontab:
-0 5 * * * cd /Users/rafaelfae/Dev/agent-ops-workflow && \
+0 5 * * * cd /Users/seu-usuario/Dev/agent-ops-workflow && \
   hermes --profile orquestrador run \
     --skills planejamento-diario \
     --prompt "Gere o plano diário de hoje para o Time Nova no Projeto Atlas. Considere o relatório do dia anterior em planejamento-diario/INDICE.md como contexto." \
-    >> /Users/rafaelfae/Dev/meu-projeto/planejamento-diario/hermes-plan.log 2>&1
+    >> /Users/seu-usuario/Dev/meu-projeto/planejamento-diario/hermes-plan.log 2>&1
 ```
 
 #### Vantagens do Nível Hermes vs Shell Script
@@ -646,9 +646,9 @@ Este script verifica a integridade de toda a estrutura `planejamento-diario/`:
 
 ```bash
 # Executar validação toda noite às 22:00, com correção automática
-0 22 * * * /Users/rafaelfae/Dev/agent-ops-workflow/scripts/validate-workflow.sh \
-  /Users/rafaelfae/Dev/meu-projeto --fix \
-  >> /Users/rafaelfae/Dev/meu-projeto/planejamento-diario/validate.log 2>&1
+0 22 * * * /Users/seu-usuario/Dev/agent-ops-workflow/scripts/validate-workflow.sh \
+  /Users/seu-usuario/Dev/meu-projeto --fix \
+  >> /Users/seu-usuario/Dev/meu-projeto/planejamento-diario/validate.log 2>&1
 ```
 
 #### Integração com notificações
@@ -660,12 +660,12 @@ Você pode combinar a validação com notificação Slack:
 # ~/scripts/cron-validate-notify.sh
 # Wrapper que valida e notifica no Slack
 
-PROJECT="/Users/rafaelfae/Dev/meu-projeto"
+PROJECT="/Users/seu-usuario/Dev/meu-projeto"
 VALIDATE_LOG="$PROJECT/planejamento-diario/validate.log"
 WEBHOOK_URL="${SLACK_WEBHOOK_URL:-}"
 
 # Executar validação
-/Users/rafaelfae/Dev/agent-ops-workflow/scripts/validate-workflow.sh "$PROJECT" --fix \
+/Users/seu-usuario/Dev/agent-ops-workflow/scripts/validate-workflow.sh "$PROJECT" --fix \
   > "$VALIDATE_LOG" 2>&1
 EXIT_CODE=$?
 
@@ -740,14 +740,14 @@ git branch -r --contains aabbccdd
 
 ```bash
 # Cron diário — 22:00 — validar estrutura e corrigir automaticamente
-0 22 * * * /Users/rafaelfae/Dev/agent-ops-workflow/scripts/validate-workflow.sh \
-  /Users/rafaelfae/Dev/meu-projeto --fix \
-  >> /Users/rafaelfae/Dev/meu-projeto/planejamento-diario/validate.log 2>&1
+0 22 * * * /Users/seu-usuario/Dev/agent-ops-workflow/scripts/validate-workflow.sh \
+  /Users/seu-usuario/Dev/meu-projeto --fix \
+  >> /Users/seu-usuario/Dev/meu-projeto/planejamento-diario/validate.log 2>&1
 
 # Cron semanal — domingo 10:00 — validação completa com verbose
-0 10 * * 0 /Users/rafaelfae/Dev/agent-ops-workflow/scripts/validate-workflow.sh \
-  /Users/rafaelfae/Dev/meu-projeto --verbose --fix \
-  >> /Users/rafaelfae/Dev/meu-projeto/planejamento-diario/validate-semanal.log 2>&1
+0 10 * * 0 /Users/seu-usuario/Dev/agent-ops-workflow/scripts/validate-workflow.sh \
+  /Users/seu-usuario/Dev/meu-projeto --verbose --fix \
+  >> /Users/seu-usuario/Dev/meu-projeto/planejamento-diario/validate-semanal.log 2>&1
 ```
 
 ---
@@ -971,12 +971,12 @@ export SLACK_HOME_CHANNEL="C0123456789"
 
 ```bash
 # Gerar relatório às 23:00 todos os dias
-0 23 * * * cd /Users/rafaelfae/Dev/agent-ops-workflow && \
+0 23 * * * cd /Users/seu-usuario/Dev/agent-ops-workflow && \
   export WORKFLOW_TEAM_NAME="Time Nova" && \
   export SLACK_WEBHOOK_URL="seu-webhook" && \
   export SLACK_HOME_CHANNEL="C0123456789" && \
-  ./scripts/gerar-relatorio.sh /Users/rafaelfae/Dev/meu-projeto \
-  >> /Users/rafaelfae/Dev/meu-projeto/planejamento-diario/relatorio.log 2>&1
+  ./scripts/gerar-relatorio.sh /Users/seu-usuario/Dev/meu-projeto \
+  >> /Users/seu-usuario/Dev/meu-projeto/planejamento-diario/relatorio.log 2>&1
 ```
 
 ---
@@ -1017,11 +1017,11 @@ REGRAS:
 
 ```bash
 # Cron diário — 23:30 — commit + push de todas as alterações do dia
-30 23 * * * cd /Users/rafaelfae/Dev/meu-projeto && \
+30 23 * * * cd /Users/seu-usuario/Dev/meu-projeto && \
   git add -A && \
   git commit -m "daily: atualizacao $(date +%Y-%m-%d)" --allow-empty && \
   git push \
-  >> /Users/rafaelfae/Dev/meu-projeto/planejamento-diario/git-push.log 2>&1
+  >> /Users/seu-usuario/Dev/meu-projeto/planejamento-diario/git-push.log 2>&1
 ```
 
 #### Script wrapper: `git-push-diario.sh`
@@ -1112,8 +1112,8 @@ fi
 
 ```bash
 # Backup da configuração Hermes todo domingo às 03:00
-0 3 * * 0 /Users/rafaelfae/Dev/agent-ops-workflow/scripts/backup-hermes-config.sh \
-  >> /Users/rafaelfae/Dev/agent-ops-workflow/planejamento-diario/backup.log 2>&1
+0 3 * * 0 /Users/seu-usuario/Dev/agent-ops-workflow/scripts/backup-hermes-config.sh \
+  >> /Users/seu-usuario/Dev/agent-ops-workflow/planejamento-diario/backup.log 2>&1
 ```
 
 #### Recomendações de backup
@@ -1170,15 +1170,15 @@ anterior com timestamp e atualiza `~/.ssh/config` se necessário.
 ```bash
 $ ./scripts/rotate-key.sh id_nova --host=github.com --comment="Time Nova - $(date +%Y-%m-%d)"
 
-[INFO] Gerando nova chave ed25519: /Users/rafaelfae/.ssh/id_nova
+[INFO] Gerando nova chave ed25519: /Users/seu-usuario/.ssh/id_nova
 
 [OK] Backup da chave anterior criado:
-[OK]   /Users/rafaelfae/.ssh/id_nova.bak.20260603_140000
-[OK]   /Users/rafaelfae/.ssh/id_nova.pub.bak.20260603_140000
+[OK]   /Users/seu-usuario/.ssh/id_nova.bak.20260603_140000
+[OK]   /Users/seu-usuario/.ssh/id_nova.pub.bak.20260603_140000
 
 [OK] Nova chave gerada com sucesso.
-[INFO]   Privada: /Users/rafaelfae/.ssh/id_nova
-[INFO]   Pública: /Users/rafaelfae/.ssh/id_nova.pub
+[INFO]   Privada: /Users/seu-usuario/.ssh/id_nova
+[INFO]   Pública: /Users/seu-usuario/.ssh/id_nova.pub
 [INFO]   Comentário: Time Nova - 2026-06-03
 
 [OK] ~/.ssh/config: IdentityFile atualizado para o host 'github.com'.
@@ -1207,7 +1207,7 @@ script simples:
 #!/bin/bash
 # scripts/rotate-logs.sh — Rotação de logs do workflow
 
-LOG_DIR="/Users/rafaelfae/Dev/meu-projeto/planejamento-diario"
+LOG_DIR="/Users/seu-usuario/Dev/meu-projeto/planejamento-diario"
 RETENTION_DAYS=30
 
 for log in cron.log validate.log relatorio.log git-push.log; do
@@ -1230,7 +1230,7 @@ echo "[OK] Limpeza concluída."
 
 ```bash
 # Limpeza semanal de logs (domingo 04:00)
-0 4 * * 0 /Users/rafaelfae/Dev/agent-ops-workflow/scripts/rotate-logs.sh
+0 4 * * 0 /Users/seu-usuario/Dev/agent-ops-workflow/scripts/rotate-logs.sh
 ```
 
 ---
@@ -1253,18 +1253,18 @@ hermes skill_view --name planejamento-diario
 
 ```bash
 # Pull do repositório agent-ops-workflow
-cd /Users/rafaelfae/Dev/agent-ops-workflow
+cd /Users/seu-usuario/Dev/agent-ops-workflow
 git pull origin main
 
 # Recarregar skills no Hermes
-hermes skill_manage sync --dir /Users/rafaelfae/Dev/agent-ops-workflow/skills
+hermes skill_manage sync --dir /Users/seu-usuario/Dev/agent-ops-workflow/skills
 ```
 
 #### Adicionar nova skill
 
 ```bash
 # Carregar skill do diretório de skills
-hermes skill_manage add /Users/rafaelfae/Dev/agent-ops-workflow/skills/devops/correcao-fechamento-diario/SKILL.md
+hermes skill_manage add /Users/seu-usuario/Dev/agent-ops-workflow/skills/devops/correcao-fechamento-diario/SKILL.md
 
 # Verificar se foi carregada
 hermes skill_list | grep correcao-fechamento-diario
@@ -1344,45 +1344,45 @@ Adicione TODAS estas linhas ao seu crontab:
 # ─── Agent Ops Workflow — Cron Jobs Diários ────────────────────────────────
 
 # 05:00 — Gerar plano diário (shell script)
-0 5 * * * cd /Users/rafaelfae/Dev/agent-ops-workflow && \
+0 5 * * * cd /Users/seu-usuario/Dev/agent-ops-workflow && \
   WORKFLOW_TEAM_NAME="Time Nova" WORKFLOW_PROJECT_NAME="Projeto Atlas" \
-  ./scripts/gerar-plano-diario.sh /Users/rafaelfae/Dev/meu-projeto --tasks=5 \
-  >> /Users/rafaelfae/Dev/meu-projeto/planejamento-diario/cron.log 2>&1
+  ./scripts/gerar-plano-diario.sh /Users/seu-usuario/Dev/meu-projeto --tasks=5 \
+  >> /Users/seu-usuario/Dev/meu-projeto/planejamento-diario/cron.log 2>&1
 
 # 05:30 — Gerar plano diário via Orquestrador Hermes (opcional, alternativa ao shell)
-# 30 5 * * * cd /Users/rafaelfae/Dev/agent-ops-workflow && \
+# 30 5 * * * cd /Users/seu-usuario/Dev/agent-ops-workflow && \
 #   hermes --profile orquestrador run \
 #     --skills planejamento-diario \
 #     --prompt "Gere o plano diario de hoje para o Time Nova no Projeto Atlas" \
-#     >> /Users/rafaelfae/Dev/meu-projeto/planejamento-diario/hermes-plan.log 2>&1
+#     >> /Users/seu-usuario/Dev/meu-projeto/planejamento-diario/hermes-plan.log 2>&1
 
 # 22:00 — Validar integridade do workflow
-0 22 * * * /Users/rafaelfae/Dev/agent-ops-workflow/scripts/validate-workflow.sh \
-  /Users/rafaelfae/Dev/meu-projeto --fix \
-  >> /Users/rafaelfae/Dev/meu-projeto/planejamento-diario/validate.log 2>&1
+0 22 * * * /Users/seu-usuario/Dev/agent-ops-workflow/scripts/validate-workflow.sh \
+  /Users/seu-usuario/Dev/meu-projeto --fix \
+  >> /Users/seu-usuario/Dev/meu-projeto/planejamento-diario/validate.log 2>&1
 
 # 23:00 — Gerar relatório diário
-0 23 * * * cd /Users/rafaelfae/Dev/agent-ops-workflow && \
+0 23 * * * cd /Users/seu-usuario/Dev/agent-ops-workflow && \
   WORKFLOW_TEAM_NAME="Time Nova" SLACK_WEBHOOK_URL="seu-webhook" \
   SLACK_HOME_CHANNEL="C0123456789" \
-  ./scripts/gerar-relatorio.sh /Users/rafaelfae/Dev/meu-projeto \
-  >> /Users/rafaelfae/Dev/meu-projeto/planejamento-diario/relatorio.log 2>&1
+  ./scripts/gerar-relatorio.sh /Users/seu-usuario/Dev/meu-projeto \
+  >> /Users/seu-usuario/Dev/meu-projeto/planejamento-diario/relatorio.log 2>&1
 
 # 23:30 — Git push automático
-30 23 * * * cd /Users/rafaelfae/Dev/meu-projeto && \
+30 23 * * * cd /Users/seu-usuario/Dev/meu-projeto && \
   git add -A && \
   git commit -m "daily: atualizacao $(date +%Y-%m-%d)" --allow-empty && \
   git push \
-  >> /Users/rafaelfae/Dev/meu-projeto/planejamento-diario/git-push.log 2>&1
+  >> /Users/seu-usuario/Dev/meu-projeto/planejamento-diario/git-push.log 2>&1
 
 # ─── Cron Jobs Semanais ────────────────────────────────────────────────────
 
 # Domingo 03:00 — Backup da configuração Hermes
-0 3 * * 0 /Users/rafaelfae/Dev/agent-ops-workflow/scripts/backup-hermes-config.sh \
-  >> /Users/rafaelfae/Dev/meu-projeto/planejamento-diario/backup.log 2>&1
+0 3 * * 0 /Users/seu-usuario/Dev/agent-ops-workflow/scripts/backup-hermes-config.sh \
+  >> /Users/seu-usuario/Dev/meu-projeto/planejamento-diario/backup.log 2>&1
 
 # Domingo 04:00 — Limpeza de logs
-0 4 * * 0 /Users/rafaelfae/Dev/agent-ops-workflow/scripts/rotate-logs.sh
+0 4 * * 0 /Users/seu-usuario/Dev/agent-ops-workflow/scripts/rotate-logs.sh
 
 # ─── Variáveis de Ambiente do Cron ─────────────────────────────────────────
 # Certifique-se de que o PATH inclui os binários necessários
